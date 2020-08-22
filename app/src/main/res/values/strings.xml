@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NEED</string>
+    <string name="email">Email</string>
+    <string name="pass">Mot de passe</string>
+    <string name="creer">Creer un compte</string>
+    <string name="oublie">Mot de passe oublie?</string>
+    <string name="login">Connexion</string>
+    <string name="nom">Nom</string>
+    <string name="inscrire">S inscrire</string>
+</resources>
