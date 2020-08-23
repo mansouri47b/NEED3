@@ -91,7 +91,7 @@
                 android:layout_weight="1"
                 android:background="@android:color/white"
                 android:hint="@string/pass"
-                android:inputType="textEmailAddress" />
+                android:inputType="textPassword" />
 
 
 
