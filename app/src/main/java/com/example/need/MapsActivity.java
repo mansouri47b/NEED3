@@ -8,13 +8,19 @@ import androidx.fragment.app.FragmentActivity;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
+import android.location.Address;
+import android.location.Geocoder;
 import android.location.Location;
 
 import android.os.Build;
 import android.os.Bundle;
+import android.text.TextUtils;
+import android.util.Log;
+import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
+import com.example.need.LoginActivity;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -30,6 +36,10 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+import java.io.IOException;
+import java.net.URL;
+import java.util.List;
+
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback,
         GoogleApiClient.ConnectionCallbacks,
         GoogleApiClient.OnConnectionFailedListener,
@@ -38,11 +48,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 {
 
     private GoogleMap mMap;
- private GoogleApiClient googleApiClient;
-   private LocationRequest  locationRequest;
-   private Location lastLocation;
-   private Marker currentUserLocationMarker;
+    private GoogleApiClient googleApiClient;
+    private LocationRequest  locationRequest;
+    private Location lastLocation;
+    private Marker currentUserLocationMarker;
     private static final int Request_User_Location_Code=99;
+    double latitude,longitude;
+    private int ProximityRadius = 10000;
 
 
 
@@ -52,7 +64,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         setContentView(R.layout.activity_maps);
 
         if (Build.VERSION.SDK_INT>=Build.VERSION_CODES.M ){
-            ceckUserLocationPermession();
+            checkUserLocationPermession();
 
         }
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
@@ -61,8 +73,86 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mapFragment.getMapAsync(this);
     }
 
+ public void onClick(View v){
+        String  hospital="Hoptial",school="Ecole",restaurant="Restaurant";
+        Object transferData[]=new  Object[2];
+        GetNearbyPlaces getNearbyPlaces=new GetNearbyPlaces();
 
-    /**
+
+        switch (v.getId()){
+            case  R.id.recherche_entreprise:
+                EditText addressfield=(EditText)   findViewById(R.id.location_search) ;
+                String address= addressfield.getText().toString();
+                List<Address> addressList=null;
+                MarkerOptions usermarkerOptions=new MarkerOptions() ;
+
+                if (!TextUtils.isEmpty(address)){
+                    Geocoder geocoder=new Geocoder(this);
+                    try {
+                        addressList=geocoder.getFromLocationName(address,6);
+                        if (addressList!=null){
+                            for (int i=0;i<addressList.size();i++){
+
+                                Address userAddress=addressList.get(i);
+                                LatLng latLng=new LatLng(userAddress.getLatitude(),userAddress.getLongitude());
+                                usermarkerOptions.position(latLng);
+                                usermarkerOptions.title(address);
+                                usermarkerOptions.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE));
+                                mMap.addMarker(usermarkerOptions);
+
+                                currentUserLocationMarker=mMap.addMarker(usermarkerOptions);
+                                mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
+                                mMap.animateCamera(CameraUpdateFactory.zoomTo(10 ));
+
+                            }
+
+                        }
+                        else {
+                            Toast.makeText(this,"Emplacement introuvable",Toast.LENGTH_SHORT).show();
+                        }
+                    } catch (IOException e) {
+                            e.printStackTrace();
+                    }
+
+                }else {
+                    Toast.makeText(this,"Veuillez écrire n'importe quelle entreprise nom",Toast.LENGTH_SHORT).show();
+                }
+                break;
+
+            case R.id.hospitals_near:
+                 mMap.clear();
+                 String url =getUrl( latitude, longitude,hospital)  ;
+                transferData[0] =mMap;
+                transferData[1]=url;
+                getNearbyPlaces.execute(transferData);
+                Toast.makeText(this,"Recherche d'hôpitaux à proximité...",Toast.LENGTH_SHORT).show();
+                Toast.makeText(this,"Affichage des hôpitaux à proximité\n...",Toast.LENGTH_SHORT).show();
+
+                break;
+            case R.id.school_near:
+                mMap.clear();
+                 url=getUrl( latitude, longitude,school)  ;
+                transferData[0] =mMap;
+                transferData[1]=url;
+                getNearbyPlaces.execute(transferData);
+                Toast.makeText(this,"Recherche d'écols à proximité...",Toast.LENGTH_SHORT).show();
+                Toast.makeText(this,"Affichage des écols à proximité...",Toast.LENGTH_SHORT).show();
+
+                break;
+            case R.id.restaurant_near:
+                mMap.clear();
+                url = getUrl( latitude, longitude,restaurant) ;
+                transferData[0] =mMap;
+                transferData[1]=url;
+                getNearbyPlaces.execute(transferData);
+                Toast.makeText(this,"Recherche des restaurants à proximité...",Toast.LENGTH_SHORT).show();
+                Toast.makeText(this,"Affichage des restaurants à proximité...",Toast.LENGTH_SHORT).show();
+
+                break;
+        }
+ }
+
+    /* *
      * Manipulates the map once available.
      * This callback is triggered when the map is ready to be used.
      * This is where we can add markers or lines, add listeners or move the camera. In this case,
@@ -81,7 +171,24 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             mMap.setMyLocationEnabled(true);
         }
     }
-        public boolean ceckUserLocationPermession (){
+
+
+   private String getUrl(double latitude, double longitude,String nearByPlace){
+
+
+        StringBuilder googleUrl=new StringBuilder("https://maps.googleapis.com/maps/api/place/findplacefromtext/json?");
+        googleUrl.append("location="+latitude+","+longitude);
+        googleUrl.append("&radius="+ProximityRadius);
+        googleUrl.append("&type="+nearByPlace);
+        googleUrl.append("&sensor=true");
+        googleUrl.append("&key"+"AIzaSyDtIWXQDUA1ufc_Vff3qbz522DnZ26Nk9w");
+
+       Log.d("MapsActivity","url = "+googleUrl.toString());
+
+ return googleUrl.toString();
+   }
+
+        public boolean checkUserLocationPermession (){
         {
             if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED)
                 if (ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.ACCESS_FINE_LOCATION)) {
@@ -122,6 +229,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     @Override
     public void onLocationChanged(Location location) {
+        latitude=location.getLatitude();
+        longitude=location.getLongitude();
             lastLocation=location;
             if (currentUserLocationMarker!=null){
                 currentUserLocationMarker.remove();
@@ -129,12 +238,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             LatLng latLng=  new LatLng(location.getLatitude(),location.getLongitude());
             MarkerOptions markerOptions=new MarkerOptions();
             markerOptions.position(latLng);
-            markerOptions.title("User Current Location");
+            markerOptions.title("Votre emplacement actuel");
             markerOptions.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_VIOLET));
 
             currentUserLocationMarker=mMap.addMarker(markerOptions);
             mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
-            mMap.animateCamera(CameraUpdateFactory.zoomBy(12));
+            mMap.animateCamera(CameraUpdateFactory.zoomTo(15));
 
             if(googleApiClient!=null){
                 LocationServices.FusedLocationApi.removeLocationUpdates(googleApiClient,this);
@@ -151,7 +260,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         locationRequest.setPriority(LocationRequest.PRIORITY_BALANCED_POWER_ACCURACY);
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED)
         {
-            LocationServices.FusedLocationApi.removeLocationUpdates(googleApiClient,this);
+            LocationServices.FusedLocationApi.requestLocationUpdates(googleApiClient,locationRequest,this);
 
         }
 

@@ -33,7 +33,7 @@
         android:backgroundTint="@android:color/white"/>
 
 <ImageButton
-
+android:id="@+id/recherche_entreprise"
     android:layout_width="45dp"
     android:layout_height="45dp"
     android:layout_marginRight="10dp"
