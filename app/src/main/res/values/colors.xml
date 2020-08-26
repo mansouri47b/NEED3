@@ -3,4 +3,7 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+    <color name="violet">#4d1f8c</color>
+    <color name="violet_light">#934cf4</color>
+
 </resources>
