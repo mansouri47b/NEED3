@@ -48,9 +48,47 @@
 
 
      </RelativeLayout>
-     
+     <androidx.cardview.widget.CardView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_columnWeight="1"
+         android:layout_rowWeight="1"
+         app:cardElevation="60dp"
+         android:layout_gravity="center"
+         app:cardCornerRadius="12dp"
+         android:layout_margin="12dp"
+
+
+         >
+         <LinearLayout
+             android:layout_marginTop="110dp"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:gravity="center"
+             android:padding="16dp"
+             android:orientation="vertical"
+             android:background="@color/violet"
+
+             >
+             <ImageView
+                 android:src="@drawable/account"
+                 android:layout_width="60dp"
+                 android:layout_height="60dp"/>
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Mon compte"
+                 android:textSize="14sp"
+                 android:textStyle="bold|italic"
+                 android:textColor="@android:color/white"
+                 android:layout_marginTop="12dp"/>
+
+
+
+         </LinearLayout>
+     </androidx.cardview.widget.CardView>
      <GridLayout
-         android:layout_marginTop="200dp"
          android:rowCount="3"
          android:columnCount="2"
          android:columnOrderPreserved="false"
@@ -87,7 +125,6 @@
                      android:layout_height="wrap_content"
                      android:text="Gestion des entreprises"
                      android:textSize="14sp"
-
                      android:textColor="@android:color/white"
                      android:layout_marginTop="12dp"
                      android:textStyle="italic|bold"/>
