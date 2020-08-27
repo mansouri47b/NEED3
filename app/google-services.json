@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "713947075599",
+    "firebase_url": "https://need-3f93c.firebaseio.com",
+    "project_id": "need-3f93c",
+    "storage_bucket": "need-3f93c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:713947075599:android:5d08a97ea7a3ab0f087f7a",
+        "android_client_info": {
+          "package_name": "com.example.need"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "713947075599-hm6prrppk3dq0ub9nbdsqntl5igudbff.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.need",
+            "certificate_hash": "949d25a515f69aa7f223d323303ad277d9a78cc7"
+          }
+        },
+        {
+          "client_id": "713947075599-0b7tjslippouamfgthodlq3ghjnf90pg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACUZAl2IKtY_xthP-QAFP6Lwa0Y-Scgbw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "713947075599-0b7tjslippouamfgthodlq3ghjnf90pg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

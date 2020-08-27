@@ -7,16 +7,18 @@
     android:layout_height="match_parent"
     android:background="@drawable/adminback"
     tools:context=".AdminActivity">
- <LinearLayout
+
+    <LinearLayout
      android:orientation="vertical"
      android:layout_width="match_parent"
-     android:layout_height="match_parent">
+     android:layout_height="match_parent"
+
+     >
 
      <RelativeLayout
 
          android:layout_marginTop="40dp"
          android:layout_marginLeft="20dp"
-         android:layout_marginRight="2dp"
          android:layout_width="match_parent"
          android:layout_height="match_parent">
          <TextView
@@ -55,19 +57,17 @@
          android:layout_rowWeight="1"
          app:cardElevation="60dp"
          android:layout_gravity="center"
-         app:cardCornerRadius="12dp"
          android:layout_margin="12dp"
-
 
          >
          <LinearLayout
-             android:layout_marginTop="110dp"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
              android:gravity="center"
              android:padding="16dp"
              android:orientation="vertical"
              android:background="@color/violet"
+
 
              >
              <ImageView
@@ -94,7 +94,8 @@
          android:columnOrderPreserved="false"
          android:layout_width="match_parent"
          android:layout_height="wrap_content"
-         android:alignmentMode="alignMargins">
+         android:alignmentMode="alignMargins"
+         >
 
          <androidx.cardview.widget.CardView
              android:layout_width="wrap_content"
