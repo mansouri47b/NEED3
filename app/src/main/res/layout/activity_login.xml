@@ -131,14 +131,14 @@
 
 
         <Button
-            android:id="@+id/SignUp1"
+            android:id="@+id/SignUp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/fPlay"
             android:layout_marginRight="90dp"
             android:layout_marginLeft="90dp"
             android:layout_marginTop="70dp"
-            android:onClick="goNext"
+            android:onClick="onClick"
             android:text="@string/creer"
             android:textAllCaps="false"
             android:background="@drawable/custom_corner"

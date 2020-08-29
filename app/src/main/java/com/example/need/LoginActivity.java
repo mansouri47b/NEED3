@@ -36,12 +36,13 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
      final EditText Email = (EditText) findViewById(R.id.Email);
     final EditText Pass = (EditText) findViewById(R.id.Pass);
     Button signIn = (Button) findViewById(R.id.SignIn);
-    Button signUp = (Button) findViewById(R.id.SignUp1);
+    Button signUp = (Button) findViewById(R.id.SignUp);
     mAuth = FirebaseAuth.getInstance();
     signUp.setOnClickListener(this);
     signIn.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
+
            String email = Email.getText().toString();
             String pass = Pass.getText().toString();
             if (TextUtils.isEmpty(email)||TextUtils.isEmpty(pass)){
@@ -70,17 +71,17 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                             // ...
                         }
                     });
+
         }
     });
+
     }
 
     public void goNext(View view) {
-        switch (view.getId()){
-            case  R.id.SignUp1 : startActivity(new Intent(LoginActivity.this,Register.class));
-                break;
+
 
         }
-    }
+
 
 
 
@@ -107,6 +108,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     @Override
     public void onClick(View view) {
+        switch (view.getId()){
+            case  R.id.SignUp : startActivity(new Intent(LoginActivity.this,Register.class));
+                break;}
 
     }
 

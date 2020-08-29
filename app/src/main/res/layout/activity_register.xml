@@ -134,6 +134,27 @@
             android:backgroundTint="#934cf4"
             />
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="325dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="1dp">
+
+            <ProgressBar
+                android:id="@+id/Progrs"
+                android:layout_width="50sp"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="150dp"
+
+
+                />
+
+
+        </RelativeLayout>
 
     </RelativeLayout>
 
