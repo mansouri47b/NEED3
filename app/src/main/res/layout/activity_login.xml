@@ -138,6 +138,7 @@
             android:layout_marginRight="90dp"
             android:layout_marginLeft="90dp"
             android:layout_marginTop="70dp"
+            android:onClick="goNext"
             android:text="@string/creer"
             android:textAllCaps="false"
             android:background="@drawable/custom_corner"
