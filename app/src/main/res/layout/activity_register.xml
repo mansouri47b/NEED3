@@ -149,6 +149,8 @@
                 android:layout_height="50dp"
                 android:layout_gravity="bottom"
                 android:layout_marginLeft="150dp"
+                android:outlineAmbientShadowColor="@color/violet"
+                android:outlineSpotShadowColor="@color/violet"
 
 
                 />
