@@ -9,6 +9,7 @@
     android:layout_height="match_parent"
     tools:context=".MapsActivity"
     android:background="#934cf4">
+
     <fragment
 
         android:layout_marginTop="60dp"
@@ -18,12 +19,20 @@
         android:name="com.google.android.gms.maps.SupportMapFragment"
 
         />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_baseline_list_24"
+
+
+        />
 
 
     <EditText
         android:id="@+id/location_search"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
         android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
         android:ems="10"
@@ -31,6 +40,7 @@
         android:layout_marginTop="6dp"
         android:background="@drawable/custom_corner"
         android:backgroundTint="@android:color/white"/>
+
 
 <ImageButton
 android:id="@+id/recherche_entreprise"

@@ -21,10 +21,11 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class Register extends AppCompatActivity implements View.OnClickListener{
+
     Button button;
-    final EditText Nom = (EditText) findViewById(R.id.nom);
-    final EditText emaill = (EditText) findViewById(R.id.Email);
-    final EditText password1 = (EditText) findViewById(R.id.Pass);
+     EditText Nom = (EditText) findViewById(R.id.nom);
+     EditText EmailSigUp = (EditText) findViewById(R.id.EmailSignUp);
+     EditText PassSignUp = (EditText) findViewById(R.id.PassSignUp);
     public FirebaseDatabase database;
     public DatabaseReference mDatabase;
     public FirebaseAuth mAuth;
@@ -36,16 +37,17 @@ public class Register extends AppCompatActivity implements View.OnClickListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        button=(Button) findViewById(R.id.SignUpp);
+        button = findViewById(R.id.SignUpp);
         database = FirebaseDatabase.getInstance();
         mDatabase = database.getReference(USER);
         mAuth = FirebaseAuth.getInstance();
+
         button.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
-                String email = emaill.getText().toString();
-                String password = password1.getText().toString();
+                String email = EmailSigUp.getText().toString();
+                String password = PassSignUp.getText().toString();
                 if (TextUtils.isEmpty(email)||TextUtils.isEmpty(password)){
                     Toast.makeText(getApplicationContext(), "Enter email And password",
                             Toast.LENGTH_LONG).show();
@@ -70,7 +72,7 @@ public class Register extends AppCompatActivity implements View.OnClickListener{
                         } else {
                             // If sign in fails, display a message to the user.
                             Log.w(TAG, "createUserWithEmail:failure", task.getException());
-                            Toast.makeText(Register.this, "Authentication failed.",
+                            Toast.makeText(Register.this, "SignUp failed.",
                                     Toast.LENGTH_SHORT).show();
                         }
 
