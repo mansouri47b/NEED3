@@ -151,7 +151,7 @@
                 android:layout_marginLeft="150dp"
                 android:outlineAmbientShadowColor="@color/violet"
                 android:outlineSpotShadowColor="@color/violet"
-
+                android:visibility="invisible"
 
                 />
 
