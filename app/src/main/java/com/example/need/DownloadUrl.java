@@ -36,14 +36,21 @@ public class DownloadUrl {
             bufferedReader.close();
 
         } catch (MalformedURLException e) {
+
             e.printStackTrace();
-        } catch (IOException e) {
+        }
+        catch (IOException e) {
+
             e.printStackTrace();
-        } finally {
+
+        }
+
+        finally {
+
             inputStream.close();
             httpURLConnection.disconnect();
         }
-        return Data;
+        return  Data;
 
     }
 }

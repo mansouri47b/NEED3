@@ -27,7 +27,6 @@
         android:layout_marginTop="9dp"
 
         />
-
     <EditText
         android:id="@+id/location_search"
         android:layout_width="match_parent"
@@ -40,7 +39,6 @@
         android:layout_marginTop="6dp"
         android:background="@drawable/custom_corner"
         android:backgroundTint="@android:color/white"/>
-
 
 <ImageButton
 
@@ -55,12 +53,14 @@
     android:background="@drawable/search"
     />
 
+
     <LinearLayout
 
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         >
+
         <ImageButton
 
             android:id="@+id/hospitals_near"
