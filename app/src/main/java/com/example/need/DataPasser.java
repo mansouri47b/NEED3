@@ -12,7 +12,7 @@ import java.util.List;
 public class DataPasser {
 
     private HashMap<String,String>  getSingleNearByPlace(JSONObject googlePlaceJSON){
-        HashMap<String,String> googlePlaceMap=new HashMap<>();
+            HashMap<String,String> googlePlaceMap=new HashMap<>();
         String  NameOfPlace="-NA-";
         String  vicinity="-NA-";
         String  latitude="";
@@ -20,22 +20,22 @@ public class DataPasser {
         String  reference="";
 
         try {
-            if(!googlePlaceJSON.isNull("nom")){
-                NameOfPlace=googlePlaceJSON.getString("nom");
+            if(!googlePlaceJSON.isNull("name")){
+                NameOfPlace=googlePlaceJSON.getString("name");
 
             }
             if(!googlePlaceJSON.isNull("vicinity")){
-                vicinity=googlePlaceJSON.getString("nom");
+                vicinity=googlePlaceJSON.getString("vicinity");
 
             }
-            latitude=googlePlaceJSON.getJSONObject("Geometrie").getJSONObject("location").getString("lat");
-            longitude=googlePlaceJSON.getJSONObject("Geometrie").getJSONObject("location").getString("lng");
+            latitude=googlePlaceJSON.getJSONObject("geometry").getJSONObject("location").getString("lat");
+            longitude=googlePlaceJSON.getJSONObject("geometry").getJSONObject("location").getString("lng");
             reference=googlePlaceJSON.getString("reference");
 
-            googlePlaceMap.put("Nom d'entreprise",NameOfPlace);
-            googlePlaceMap.put("Proximité",vicinity);
+            googlePlaceMap.put("place_name",NameOfPlace);
+            googlePlaceMap.put("vicinity",vicinity);
             googlePlaceMap.put("lat",latitude);
-            googlePlaceMap.put("long",vicinity);
+            googlePlaceMap.put("lng",longitude);
             googlePlaceMap.put("reference",reference);
 
 
@@ -57,21 +57,25 @@ public class DataPasser {
             for (int i=0;i<compteur;i++)
             {
                 try {
-                    NearByPlaceMap=getSingleNearByPlace((JSONObject) jsonArray.get(i));
-                    NearByPlacesList.add(NearByPlaceMap);
+                       NearByPlaceMap=getSingleNearByPlace((JSONObject) jsonArray.get(i));
+                       NearByPlacesList.add(NearByPlaceMap);
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
             }
                     return NearByPlacesList;
     }
+
+
     public  List<HashMap<String,String>> parse (String jSONdata){
 
         JSONArray jsonArray=null;
-
+        JSONObject jsonObject;
         try {
-            JSONObject jsonObject=new JSONObject(jSONdata);
-            jsonArray=jsonObject.getJSONArray("Résultats");
+
+            jsonObject=new JSONObject(jSONdata);
+            jsonArray=jsonObject.getJSONArray("results");
+
         } catch (JSONException e) {
             e.printStackTrace();
         }

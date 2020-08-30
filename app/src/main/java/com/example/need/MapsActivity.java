@@ -21,6 +21,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.example.need.LoginActivity;
@@ -51,6 +52,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
 {
 
+
     private GoogleMap mMap;
     private GoogleApiClient googleApiClient;
     private LocationRequest  locationRequest;
@@ -67,6 +69,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
 
@@ -99,7 +103,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         switch (v.getId()){
             case  R.id.recherche_entreprise:
-                EditText addressfield=(EditText)   findViewById(R.id.location_search) ;
+                EditText addressfield=(EditText) findViewById(R.id.location_search);
                 String address= addressfield.getText().toString();
                 List<Address> addressList=null;
                 MarkerOptions usermarkerOptions=new MarkerOptions() ;

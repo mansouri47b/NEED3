@@ -21,7 +21,7 @@
             <TextView
                 android:textSize="24dp"
                 android:textStyle="bold"
-                android:text="Gestion des localisations"
+                android:text="Gestion des entreprises"
                 android:textColor="@android:color/white"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -31,6 +31,7 @@
 
 
         </LinearLayout>
+
         <GridLayout
 
             android:rowCount="3"
@@ -40,7 +41,6 @@
             android:layout_height="wrap_content"
             android:alignmentMode="alignMargins"
             android:layout_marginTop="140dp"
-
             >
 
             <androidx.cardview.widget.CardView
@@ -70,12 +70,12 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="11dp"
                         android:text="Ajouter des localisations"
-                        android:textSize="11sp"
 
                         android:textColor="@android:color/white"
-                        android:layout_marginTop="12dp"
-                        android:textStyle="italic|bold"/>
+                        android:textSize="11sp"
+                        android:textStyle="italic|bold" />
 
 
 
@@ -123,6 +123,7 @@
 
 
         </GridLayout>
+
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -163,8 +164,6 @@
 
 
         </LinearLayout>
-
-
     </LinearLayout>
 
 
