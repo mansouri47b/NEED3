@@ -27,4 +27,17 @@ public class AdminActivity extends AppCompatActivity {
             case  R.id.goGestionP : startActivity(new Intent(AdminActivity.this,GestionProduit.class));
                 break;}
     }
+
+    public void logoutAdmin(View view) {
+        switch (view.getId()){
+            case  R.id.logoutadmin : startActivity(new Intent(AdminActivity.this,LoginActivity.class));
+                break;}
+
+    }
+
+    public void GoToHomePage(View view) {
+        switch (view.getId()){
+            case  R.id.GoToHomePage : startActivity(new Intent(AdminActivity.this,MapsActivity.class));
+                break;}
+    }
 }
