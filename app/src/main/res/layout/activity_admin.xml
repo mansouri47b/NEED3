@@ -63,6 +63,7 @@
          <LinearLayout
              android:layout_width="match_parent"
              android:layout_height="match_parent"
+
              android:gravity="center"
              android:padding="16dp"
              android:orientation="vertical"
@@ -117,6 +118,7 @@
 
                  >
                  <ImageView
+                     android:id="@+id/goGestionE"
                      android:src="@drawable/entreprise"
                      android:layout_width="80dp"
                      android:layout_height="80dp"
@@ -128,7 +130,7 @@
                      android:layout_width="wrap_content"
                      android:layout_height="wrap_content"
                      android:text="Gestion des entreprises"
-                     android:textSize="14sp"
+                     android:textSize="11sp"
                      android:textColor="@android:color/white"
                      android:layout_marginTop="12dp"
                      android:textStyle="italic|bold"/>
@@ -158,6 +160,7 @@
 
                  >
                  <ImageView
+                     android:id="@+id/goGestionP"
                      android:src="@drawable/produit"
                      android:layout_width="80dp"
                      android:layout_height="80dp"
@@ -169,7 +172,7 @@
                      android:layout_width="wrap_content"
                      android:layout_height="wrap_content"
                      android:text="Gestion des produits"
-                     android:textSize="14sp"
+                     android:textSize="13sp"
                      android:textStyle="bold|italic"
                      android:textColor="@android:color/white"
                      android:layout_marginTop="12dp"/>

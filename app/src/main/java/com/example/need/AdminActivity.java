@@ -18,13 +18,13 @@ public class AdminActivity extends AppCompatActivity {
 
     public void goGestionEtreprise(View view) {
         switch (view.getId()){
-            case  R.id.SignUp : startActivity(new Intent(AdminActivity.this,GestionEntreprise.class));
+            case  R.id.goGestionE : startActivity(new Intent(AdminActivity.this,GestionEntreprise.class));
                 break;}
     }
 
     public void goGestionProduit(View view) {
         switch (view.getId()){
-            case  R.id.SignUp : startActivity(new Intent(AdminActivity.this,GestionProduit.class));
+            case  R.id.goGestionP : startActivity(new Intent(AdminActivity.this,GestionProduit.class));
                 break;}
     }
 }

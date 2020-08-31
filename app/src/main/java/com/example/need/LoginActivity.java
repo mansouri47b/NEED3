@@ -54,6 +54,13 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                         Toast.LENGTH_LONG).show();
                 return;
             }
+            if(Email.getText().toString().equals("admin@gmail.com") &&
+                    Pass.getText().toString().equals("jesuisadmin")) {
+                Toast.makeText(getApplicationContext(),
+                        "Redirecting...", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(LoginActivity.this, AdminActivity.class));
+            }
+
 
 
             mAuth.signInWithEmailAndPassword(email, pass)
