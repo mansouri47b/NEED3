@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ss"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="-8dp"
+        android:layout_marginBottom="-20dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ivLogo"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="-5dp">
+
+
+        <LinearLayout
+            android:id="@+id/emailLay"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="23dp"
+            android:background="@drawable/shape"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <EditText
+                android:id="@+id/addNum"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="7dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:hint="Add Numéro produit"
+                android:inputType="text" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/PassLay"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@+id/emailLay"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <EditText
+                android:id="@+id/addNom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="7dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:hint="Add Nom produit"
+                android:inputType="text" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@+id/PassLay"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <EditText
+                android:id="@+id/addQuantité"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="7dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:hint="Add Quantité"
+                android:inputType="text" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@+id/PassLay"
+            android:layout_marginTop="90dp"
+            android:background="@drawable/shape"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+           <EditText
+            android:id="@+id/addPrix"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="7dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:hint="Add Prix"
+            android:inputType="text" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/ADD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/PassLay"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="190dp"
+            android:text="ADD"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:background="@drawable/custom_corner"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#934cf4"
+            />
+        <Button
+            android:id="@+id/BACK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/PassLay"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="260dp"
+            android:text="BACK"
+
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:background="@drawable/custom_corner"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#934cf4"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
