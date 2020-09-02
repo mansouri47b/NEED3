@@ -20,6 +20,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".ProduitListActivity"></activity>
+        <activity android:name=".deleteProduitActivity" />
         <activity android:name=".NewProduitActivity" />
         <activity android:name=".AdminActivity" />
         <activity android:name=".GestionProduit" />
