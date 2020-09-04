@@ -22,8 +22,9 @@ public class RecyclerView_config{
    public void setConfig(RecyclerView recyclerView , Context context , List<Produit> produits , List<String> keys){
        mContext = context;
        mProduitsAdapter = new ProduitsAdapter(produits ,keys);
-       recyclerView.setLayoutManager(new LinearLayoutManager(context));
+       
        recyclerView.setAdapter(mProduitsAdapter);
+       recyclerView.setLayoutManager(new LinearLayoutManager(context));
    }
 
    class ProduitTtemView extends RecyclerView.ViewHolder{
@@ -44,14 +45,23 @@ public class RecyclerView_config{
            itemView.setOnClickListener(new View.OnClickListener() {
                @Override
                public void onClick(View view) {
-                   Intent intent = new Intent(mContext, deleteProduitActivity.class);
+                   Intent intent = new Intent(mContext, updateProduitActivity.class);
+                   Intent intent1 = new Intent(mContext, deleteProduitActivity.class);
                    intent.putExtra("key",key);
                    intent.putExtra("Numéro",mNuméro.getText().toString());
                    intent.putExtra("Nom produit",mNom_produit.getText().toString());
                    intent.putExtra("Quantité",mQuantité.getText().toString());
                    intent.putExtra("Prix",mPrix.getText().toString());
 
+                   intent1.putExtra("key",key);
+                   intent1.putExtra("Numéro",mNuméro.getText().toString());
+                   intent1.putExtra("Nom produit",mNom_produit.getText().toString());
+                   intent1.putExtra("Quantité",mQuantité.getText().toString());
+                   intent1.putExtra("Prix",mPrix.getText().toString());
+
+
                    mContext.startActivity(intent);
+                   mContext.startActivity(intent1);
                }
            });
        }
@@ -64,7 +74,6 @@ public class RecyclerView_config{
        }
    }
    class ProduitsAdapter extends RecyclerView.Adapter<ProduitTtemView>{
-
        private List<Produit> mProduitList;
        private List<String> mkeys;
 

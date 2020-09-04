@@ -1,7 +1,6 @@
 package com.example.need;
 
 import android.os.Bundle;
-import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
@@ -27,6 +26,10 @@ public class ProduitListActivity extends AppCompatActivity {
 
             }
 
+            @Override
+            public void DataIsUpdated() {
+
+            }
 
             @Override
             public void DataIsDeleted() {

@@ -21,7 +21,7 @@ public class FirebaseDatabaseHalper {
     public interface DataStatus{
         void DataIsLoaded(List<Produit> produits ,List<String> keys );
         void DataIsInserted();
-
+        void DataIsUpdated();
         void DataIsDeleted();
     }
 
@@ -58,7 +58,7 @@ public class FirebaseDatabaseHalper {
                   }
               });
     }
-   /* public void updateProduit(String key ,Produit produit ,final DataStatus dataStatus) {
+    public void updateProduit(String key ,Produit produit ,final DataStatus dataStatus) {
         mReference.child(key).setValue(produit)
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
@@ -67,9 +67,7 @@ public class FirebaseDatabaseHalper {
                     }
                 });
     }
-
-    */
-    public void deletProduit(String key , final DataStatus dataStatus){
+    public void deleteProduit(String key, Produit produitD, final DataStatus dataStatus){
         mReference.child(key).setValue(null)
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override

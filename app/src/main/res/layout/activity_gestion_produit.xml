@@ -104,11 +104,11 @@
 
                     >
                     <ImageView
-                        android:id="@+id/GoDelete"
+                        android:id="@+id/GoSupprimer"
                         android:src="@drawable/supppro"
                         android:layout_width="90dp"
                         android:layout_height="90dp"
-                        android:onClick="GoDelete"/>
+                        android:onClick="GoSupprimer"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -151,10 +151,11 @@
 
             >
             <ImageView
-
+                android:id="@+id/GoModifier"
                 android:src="@drawable/modifpro"
                 android:layout_width="90dp"
-                android:layout_height="90dp"/>
+                android:layout_height="90dp"
+                android:onClick="GoModifier"/>
 
             <TextView
                 android:layout_width="wrap_content"

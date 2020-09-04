@@ -39,7 +39,7 @@
             android:padding="5dp">
 
             <EditText
-                android:id="@+id/updateNum"
+                android:id="@+id/deleteNum"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="14dp"
@@ -48,7 +48,7 @@
                 android:layout_marginBottom="7dp"
                 android:layout_weight="1"
                 android:background="@android:color/white"
-                android:hint="Add Numéro produit"
+                android:hint="Supprimer Numéro produit"
                 android:inputType="text" />
         </LinearLayout>
 
@@ -63,7 +63,7 @@
             android:padding="5dp">
 
             <EditText
-                android:id="@+id/updateNom"
+                android:id="@+id/deleteNom"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="14dp"
@@ -72,7 +72,7 @@
                 android:layout_marginBottom="7dp"
                 android:layout_weight="1"
                 android:background="@android:color/white"
-                android:hint="Add Nom produit"
+                android:hint="Supprimer Nom produit"
                 android:inputType="text" />
 
         </LinearLayout>
@@ -86,7 +86,7 @@
             android:padding="5dp">
 
             <EditText
-                android:id="@+id/updateQuantité"
+                android:id="@+id/deleteQuantité"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="14dp"
@@ -95,7 +95,7 @@
                 android:layout_marginBottom="7dp"
                 android:layout_weight="1"
                 android:background="@android:color/white"
-                android:hint="Add Quantité"
+                android:hint="Supprimer Quantité"
                 android:inputType="text" />
 
         </LinearLayout>
@@ -109,7 +109,7 @@
             android:padding="5dp">
 
             <EditText
-                android:id="@+id/updatePrix"
+                android:id="@+id/deletePrix"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="14dp"
@@ -118,7 +118,7 @@
                 android:layout_marginBottom="7dp"
                 android:layout_weight="1"
                 android:background="@android:color/white"
-                android:hint="Add Prix"
+                android:hint="Supprimer  Prix"
                 android:inputType="text" />
         </LinearLayout>
 
@@ -130,7 +130,7 @@
             android:layout_marginRight="50dp"
             android:layout_marginLeft="50dp"
             android:layout_marginTop="190dp"
-            android:text="DELETE"
+            android:text="SUPPRIMER"
             android:textStyle="bold"
             android:textAllCaps="false"
             android:background="@drawable/custom_corner"
@@ -138,7 +138,7 @@
             android:backgroundTint="#934cf4"
             />
         <Button
-            android:id="@+id/BACK"
+            android:id="@+id/BACKD"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/PassLay"

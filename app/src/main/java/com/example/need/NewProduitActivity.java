@@ -17,7 +17,7 @@ public class NewProduitActivity extends AppCompatActivity {
     private EditText addQuantité;
     private EditText addPrix;
     private Button ADD;
-    private Button BACK;
+    private Button BACKA;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +28,7 @@ public class NewProduitActivity extends AppCompatActivity {
         addQuantité = (EditText) findViewById(R.id.addQuantité);
         addPrix = (EditText) findViewById(R.id.addPrix);
         ADD = (Button) findViewById(R.id.ADD);
-        BACK = (Button) findViewById(R.id.BACK);
+        BACKA = (Button) findViewById(R.id.BACK);
 
         ADD.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,7 +41,6 @@ public class NewProduitActivity extends AppCompatActivity {
                 new FirebaseDatabaseHalper().addProduit(produit, new FirebaseDatabaseHalper.DataStatus() {
                     @Override
                     public void DataIsLoaded(List<Produit> produits, List<String> keys) {
-
                     }
 
                     @Override
@@ -51,13 +50,17 @@ public class NewProduitActivity extends AppCompatActivity {
 
                     }
 
+                    @Override
+                    public void DataIsUpdated() {
+
+                    }
 
                     @Override
                     public void DataIsDeleted() {
 
                     }
                 });
-                BACK.setOnClickListener(new View.OnClickListener() {
+                BACKA.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
                         finish();

@@ -63,16 +63,17 @@
 
                     >
                     <ImageView
+                        android:id="@+id/GoAjoutéL"
                         android:src="@drawable/ajouterloc"
                         android:layout_width="70dp"
-                        android:layout_height="60dp"/>
+                        android:layout_height="60dp"
+                        android:onClick="GoAjoutéL"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="11dp"
                         android:text="Ajouter des localisations"
-
                         android:textColor="@android:color/white"
                         android:textSize="10sp"
                         android:textStyle="italic|bold" />
@@ -102,9 +103,11 @@
 
                     >
                     <ImageView
+                        android:id="@+id/GoModifierL"
                         android:src="@drawable/supploc"
                         android:layout_width="70dp"
-                        android:layout_height="60dp"/>
+                        android:layout_height="60dp"
+                        android:onClick="GoModifierL"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -147,10 +150,11 @@
 
             >
             <ImageView
-
+                android:id="@+id/GoSupprimerL"
                 android:src="@drawable/modifloc"
                 android:layout_width="80dp"
-                android:layout_height="80dp"/>
+                android:layout_height="80dp"
+                android:onClick="GoSupprimerL"/>
 
             <TextView
                 android:layout_width="wrap_content"

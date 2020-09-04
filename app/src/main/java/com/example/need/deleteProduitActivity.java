@@ -12,13 +12,13 @@ import android.widget.Toast;
 import java.util.List;
 
 public class deleteProduitActivity extends AppCompatActivity {
-    private EditText updateNuméro;
-    private EditText updateNom;
-    private EditText updateQuantité;
-    private EditText updatePrix;
+    private EditText deleteNuméro;
+    private EditText deleteNom;
+    private EditText deleteQuantité;
+    private EditText deletePrix;
 
     private Button DELETE;
-    private Button BACK;
+    private Button BACKD;
 
     private String key;
     private String Numéro;
@@ -38,50 +38,60 @@ public class deleteProduitActivity extends AppCompatActivity {
         Prix = getIntent().getStringExtra("Prix");
 
 
-        updateNuméro = (EditText) findViewById(R.id.updateNum);
-        updateNuméro.setText(Numéro);
-        updateNom = (EditText) findViewById(R.id.updateNom);
-        updateNom.setText(Nom_produit);
-        updateQuantité = (EditText) findViewById(R.id.updateQuantité);
-        updateQuantité.setText(Quantité);
-        updatePrix = (EditText) findViewById(R.id.updatePrix);
-        updatePrix.setText(Prix);
+        deleteNuméro = (EditText) findViewById(R.id.deleteNum);
+        deleteNuméro.setText(Numéro);
+        deleteNom = (EditText) findViewById(R.id.deleteNom);
+        deleteNom.setText(Nom_produit);
+        deleteQuantité = (EditText) findViewById(R.id.deleteQuantité);
+        deleteQuantité.setText(Quantité);
+        deletePrix = (EditText) findViewById(R.id.deletePrix);
+        deletePrix.setText(Prix);
 
 
         DELETE = (Button) findViewById(R.id.DELETE);
-        BACK = (Button) findViewById(R.id.BACK);
+        BACKD = (Button) findViewById(R.id.BACK);
+
         DELETE.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                new FirebaseDatabaseHalper().deletProduit(key, new FirebaseDatabaseHalper.DataStatus() {
+                Produit produitD = new Produit();
+                produitD.setNuméro(deleteNuméro.getText().toString());
+                produitD.setNom_produit(deleteNom.getText().toString());
+                produitD.setQuantité(deleteQuantité.getText().toString());
+                produitD.setPrix(deletePrix.getText().toString());
+
+                new FirebaseDatabaseHalper().deleteProduit(key, produitD, new FirebaseDatabaseHalper.DataStatus() {
                     @Override
                     public void DataIsLoaded(List<Produit> produits, List<String> keys) {
+
                     }
 
                     @Override
                     public void DataIsInserted() {
+
                     }
 
+                    @Override
+                    public void DataIsUpdated() {
+
+                    }
 
                     @Override
                     public void DataIsDeleted() {
-                        Toast.makeText(deleteProduitActivity.this, "delete produit",Toast.LENGTH_LONG).show();
-                        finish(); return;
+                        Toast.makeText(deleteProduitActivity.this, "Produit record has "+ "been deleted Successfully"
+                                ,Toast.LENGTH_LONG).show();
 
+                    }
+                });
+                BACKD.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        finish();
+                        return;
                     }
                 });
             }
         });
-        BACK.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish(); return;
-            }
-        });
-
-
-
-
     }
 
 

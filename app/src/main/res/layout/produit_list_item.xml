@@ -1,65 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    style="?android:attr/listSeparatorTextViewStyle"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-<GridView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    />
     <TextView
         android:id="@+id/Numéro"
-        android:layout_width="150dp"
-        android:layout_height="28dp"
-        android:layout_margin="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginTop="5dp"
         android:text="Num"
-        android:textSize="18sp"
-        android:textStyle="bold"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/Nom_produit"
-        android:layout_width="170dp"
-        android:layout_height="23dp"
-        android:layout_marginStart="5dp"
+        android:id="@+id/Quantité"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="8dp"
-        android:text="Nom"
+        android:text="Quantité"
+        android:textSize="20sp"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Numéro"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/Numéro" />
 
     <TextView
-        android:id="@+id/Quantité"
-        android:layout_width="142dp"
-        android:layout_height="23dp"
+        android:id="@+id/Nom_produit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="4dp"
-        android:text="Quantité"
+        android:text="Nom produit"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/Prix"
-        android:layout_width="138dp"
-        android:layout_height="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="8dp"
-        android:text="prix"
+        android:text="Prix"
         android:typeface="monospace"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Quantité" />
-
-
-</LinearLayout>
+        app:layout_constraintTop_toBottomOf="@+id/Nom_produit" />
+</androidx.constraintlayout.widget.ConstraintLayout>

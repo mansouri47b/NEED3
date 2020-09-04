@@ -33,13 +33,13 @@
             android:id="@+id/emailLay"
             android:layout_width="match_parent"
             android:layout_height="55dp"
-            android:layout_marginTop="23dp"
+            android:layout_marginTop="63dp"
             android:background="@drawable/shape"
             android:orientation="horizontal"
             android:padding="5dp">
 
             <EditText
-                android:id="@+id/addNum"
+                android:id="@+id/Longétude1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="14dp"
@@ -48,7 +48,7 @@
                 android:layout_marginBottom="7dp"
                 android:layout_weight="1"
                 android:background="@android:color/white"
-                android:hint="Ajouté Numéro produit"
+                android:hint=" Longétude"
                 android:inputType="text" />
 
 
@@ -65,7 +65,7 @@
             android:padding="5dp">
 
             <EditText
-                android:id="@+id/addNom"
+                android:id="@+id/Attitude1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="14dp"
@@ -74,65 +74,21 @@
                 android:layout_marginBottom="7dp"
                 android:layout_weight="1"
                 android:background="@android:color/white"
-                android:hint="Ajouté Nom produit"
+                android:hint=" Attitude"
                 android:inputType="text" />
 
         </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_below="@+id/PassLay"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/shape"
-            android:orientation="horizontal"
-            android:padding="5dp">
 
-            <EditText
-                android:id="@+id/addQuantité"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="14dp"
-                android:layout_marginTop="7dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="7dp"
-                android:layout_weight="1"
-                android:background="@android:color/white"
-                android:hint="Ajouté Quantité"
-                android:inputType="text" />
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_below="@+id/PassLay"
-            android:layout_marginTop="90dp"
-            android:background="@drawable/shape"
-            android:orientation="horizontal"
-            android:padding="5dp">
-
-           <EditText
-            android:id="@+id/addPrix"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="14dp"
-            android:layout_marginTop="7dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="7dp"
-            android:layout_weight="1"
-            android:background="@android:color/white"
-            android:hint="Ajouté Prix"
-            android:inputType="text" />
-        </LinearLayout>
 
         <Button
-            android:id="@+id/ADD"
+            android:id="@+id/MODIFIER"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/PassLay"
             android:layout_marginRight="50dp"
             android:layout_marginLeft="50dp"
-            android:layout_marginTop="190dp"
-            android:text="AJOUTÉ"
+            android:layout_marginTop="100dp"
+            android:text="MODIFIER"
             android:textStyle="bold"
             android:textAllCaps="false"
             android:background="@drawable/custom_corner"
@@ -140,14 +96,29 @@
             android:backgroundTint="#934cf4"
             />
         <Button
-            android:id="@+id/BACKA"
+            android:id="@+id/SUPPRIMER"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/PassLay"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="180dp"
+            android:text="SUPPRIMER"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:background="@drawable/custom_corner"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#934cf4"
+            />
+        <Button
+            android:id="@+id/RETOUR"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/PassLay"
             android:layout_marginRight="50dp"
             android:layout_marginLeft="50dp"
             android:layout_marginTop="260dp"
-            android:text="BACK"
+            android:text="RETOUR"
             android:textStyle="bold"
             android:textAllCaps="false"
             android:background="@drawable/custom_corner"

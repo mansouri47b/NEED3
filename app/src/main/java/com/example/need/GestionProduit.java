@@ -21,12 +21,17 @@ public class GestionProduit extends AppCompatActivity {
                 break;}
 
     }
-    public void GoDelete(View view) {
+    public void GoModifier(View view) {
         switch (view.getId()){
-            case  R.id. GoDelete : startActivity(new Intent(GestionProduit.this,ProduitListActivity.class));
+            case  R.id. GoModifier : startActivity(new Intent(GestionProduit.this,updateProduitActivity.class));
                 break;}
 
     }
+    public void GoSupprimer(View view) {
+        switch (view.getId()){
+            case  R.id. GoSupprimer : startActivity(new Intent(GestionProduit.this,deleteProduitActivity.class));
+                break;}
 
+    }
 
 }
