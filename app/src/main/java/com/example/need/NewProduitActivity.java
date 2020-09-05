@@ -28,7 +28,7 @@ public class NewProduitActivity extends AppCompatActivity {
         addQuantité = (EditText) findViewById(R.id.addQuantité);
         addPrix = (EditText) findViewById(R.id.addPrix);
         ADD = (Button) findViewById(R.id.ADD);
-        BACKA = (Button) findViewById(R.id.BACK);
+        BACKA = (Button) findViewById(R.id.BACKA);
 
         ADD.setOnClickListener(new View.OnClickListener() {
             @Override
