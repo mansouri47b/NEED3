@@ -26,6 +26,9 @@ public class RecyclerView_ConfigL{
     }
 
     class LocalisationTtemView extends RecyclerView.ViewHolder{
+        private TextView Numéro ;
+        private TextView Adresse;
+        private TextView Téléphone;
         private TextView Longétude ;
         private TextView Attitude;
 
@@ -33,6 +36,9 @@ public class RecyclerView_ConfigL{
         public LocalisationTtemView(ViewGroup parent){
             super(LayoutInflater.from(mContextL).
                     inflate(R.layout.localisation_list_item, parent , false));
+            Numéro = (TextView) itemView.findViewById(R.id.NuméroL);
+            Adresse = (TextView) itemView.findViewById(R.id.Adresse);
+            Téléphone = (TextView) itemView.findViewById(R.id.Téléphone);
             Longétude = (TextView) itemView.findViewById(R.id.Longétude);
             Attitude = (TextView) itemView.findViewById(R.id.Attitude);
 
@@ -42,6 +48,9 @@ public class RecyclerView_ConfigL{
                     Intent intent = new Intent(mContextL, LocalisationDetailsActivity.class);
 
                     intent.putExtra("key",key);
+                    intent.putExtra("Numéro",Numéro.getText().toString());
+                    intent.putExtra("Adresse",Adresse.getText().toString());
+                    intent.putExtra("Téléphone",Téléphone.getText().toString());
                     intent.putExtra("Longétude",Longétude.getText().toString());
                     intent.putExtra("Attitude",Attitude.getText().toString());
 
@@ -51,6 +60,9 @@ public class RecyclerView_ConfigL{
             });
         }
         public void bindL(Localisation localisation , String key ){
+            Numéro.setText(localisation.getNuméro());
+            Adresse.setText(localisation.getAdresse());
+            Téléphone.setText(localisation.getTéléphone());
             Longétude.setText(localisation.getLongétude());
             Attitude.setText(localisation.getAttitude());
             this.key = key ;

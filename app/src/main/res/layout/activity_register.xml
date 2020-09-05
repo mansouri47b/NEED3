@@ -139,7 +139,7 @@
             android:layout_height="50sp"
 
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="325dp"
+            android:layout_marginTop="340dp"
             android:layout_marginEnd="0dp"
             android:layout_marginBottom="1dp">
 
@@ -148,7 +148,7 @@
                 android:layout_width="50sp"
                 android:layout_height="50dp"
                 android:layout_gravity="bottom"
-                android:layout_marginLeft="150dp"
+                android:layout_marginLeft="135dp"
                 android:outlineAmbientShadowColor="@color/violet"
                 android:outlineSpotShadowColor="@color/violet"
                 android:visibility="invisible"

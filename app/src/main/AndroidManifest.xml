@@ -21,7 +21,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".LocalisationDetailsActivity"></activity>
         <activity android:name=".NewLocalisationActivity" />
-        <activity android:name=".LoginActivity" />
+        <activity android:name=".LocalisationListActivity" />
         <activity android:name=".deleteProduitActivity" />
         <activity android:name=".updateProduitActivity" />
         <activity android:name=".NewProduitActivity" />
@@ -47,7 +47,7 @@
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps" />
         <activity android:name=".Register" />
-        <activity android:name=".LocalisationListActivity">
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

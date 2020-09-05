@@ -73,9 +73,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="11dp"
-                        android:text="Ajouter des localisations"
+                        android:text="Ajouter des points des ventes"
                         android:textColor="@android:color/white"
-                        android:textSize="10sp"
+                        android:textSize="8sp"
                         android:textStyle="italic|bold" />
 
 
@@ -112,8 +112,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Supprimer des localisations"
-                        android:textSize="9sp"
+                        android:text="Supprimer des points des ventes"
+                        android:textSize="7sp"
                         android:textStyle="bold|italic"
                         android:textColor="@android:color/white"
                         android:layout_marginTop="12dp"/>
@@ -159,7 +159,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Modifier des localisations"
+                android:text="Modifier des points des ventes"
                 android:textSize="11sp"
                 android:textStyle="bold|italic"
                 android:textColor="@android:color/white"

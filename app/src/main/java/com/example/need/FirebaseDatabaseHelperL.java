@@ -30,7 +30,7 @@ public class FirebaseDatabaseHelperL {
 
     public FirebaseDatabaseHelperL() {
         mDatabase = FirebaseDatabase.getInstance();
-        mReferenceLocalisations = mDatabase.getReference("Localisation");
+        mReferenceLocalisations = mDatabase.getReference("Points des ventes");
     }
     public void ReadLocalisations(final DataStatus dataStatus){
         mReferenceLocalisations.addValueEventListener(new ValueEventListener() {

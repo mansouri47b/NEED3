@@ -27,13 +27,85 @@
         android:layout_marginTop="65dp"
         android:layout_marginRight="32dp"
         android:layout_marginBottom="-5dp">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <EditText
+                android:id="@+id/addNuméroL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="7dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:hint="Ajouté Numéro"
+                android:inputType="text" />
+
+
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="93dp"
+            android:background="@drawable/shape"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <EditText
+                android:id="@+id/addAdresse"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="7dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:hint="Ajouté Adresse"
+                android:inputType="text" />
+
+
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="163dp"
+            android:background="@drawable/shape"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <EditText
+                android:id="@+id/addTéléphone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="7dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:hint="Ajouté Téléphone"
+                android:inputType="text" />
+
+
+        </LinearLayout>
 
 
         <LinearLayout
             android:id="@+id/emailLay"
             android:layout_width="match_parent"
             android:layout_height="55dp"
-            android:layout_marginTop="63dp"
+            android:layout_marginTop="233dp"
             android:background="@drawable/shape"
             android:orientation="horizontal"
             android:padding="5dp">
@@ -48,7 +120,7 @@
                 android:layout_marginBottom="7dp"
                 android:layout_weight="1"
                 android:background="@android:color/white"
-                android:hint="Ajouté Longétude"
+                android:hint="Ajouté Longitude"
                 android:inputType="text" />
 
 
@@ -74,7 +146,7 @@
                 android:layout_marginBottom="7dp"
                 android:layout_weight="1"
                 android:background="@android:color/white"
-                android:hint="Ajouté Attitude"
+                android:hint="Ajouté Latitude"
                 android:inputType="text" />
 
         </LinearLayout>
@@ -87,7 +159,7 @@
             android:layout_below="@id/PassLay"
             android:layout_marginRight="50dp"
             android:layout_marginLeft="50dp"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="60dp"
             android:text="AJOUTÉ"
             android:textStyle="bold"
             android:textAllCaps="false"
@@ -102,8 +174,8 @@
             android:layout_below="@id/PassLay"
             android:layout_marginRight="50dp"
             android:layout_marginLeft="50dp"
-            android:layout_marginTop="160dp"
-            android:text="BACK"
+            android:layout_marginTop="130dp"
+            android:text="RETOUR"
             android:textStyle="bold"
             android:textAllCaps="false"
             android:background="@drawable/custom_corner"

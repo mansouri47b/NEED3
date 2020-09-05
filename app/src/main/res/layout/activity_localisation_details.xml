@@ -27,13 +27,83 @@
         android:layout_marginTop="65dp"
         android:layout_marginRight="32dp"
         android:layout_marginBottom="-5dp">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <EditText
+                android:id="@+id/Numéro1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="7dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:hint=" Numéro"
+                android:inputType="text" />
+
+
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="93dp"
+            android:background="@drawable/shape"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <EditText
+                android:id="@+id/Adresse1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="7dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:hint=" Adresse"
+                android:inputType="text" />
+
+
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="163dp"
+            android:background="@drawable/shape"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+        <EditText
+            android:id="@+id/Téléphone1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="7dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:hint=" Téléphone"
+            android:inputType="text" />
+        </LinearLayout>
 
 
         <LinearLayout
             android:id="@+id/emailLay"
             android:layout_width="match_parent"
             android:layout_height="55dp"
-            android:layout_marginTop="63dp"
+            android:layout_marginTop="235dp"
             android:background="@drawable/shape"
             android:orientation="horizontal"
             android:padding="5dp">
@@ -48,7 +118,7 @@
                 android:layout_marginBottom="7dp"
                 android:layout_weight="1"
                 android:background="@android:color/white"
-                android:hint=" Longétude"
+                android:hint=" Longitude"
                 android:inputType="text" />
 
 
@@ -74,7 +144,7 @@
                 android:layout_marginBottom="7dp"
                 android:layout_weight="1"
                 android:background="@android:color/white"
-                android:hint=" Attitude"
+                android:hint=" Latitude"
                 android:inputType="text" />
 
         </LinearLayout>
@@ -87,7 +157,7 @@
             android:layout_below="@id/PassLay"
             android:layout_marginRight="50dp"
             android:layout_marginLeft="50dp"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="60dp"
             android:text="MODIFIER"
             android:textStyle="bold"
             android:textAllCaps="false"
@@ -102,7 +172,7 @@
             android:layout_below="@id/PassLay"
             android:layout_marginRight="50dp"
             android:layout_marginLeft="50dp"
-            android:layout_marginTop="180dp"
+            android:layout_marginTop="140dp"
             android:text="SUPPRIMER"
             android:textStyle="bold"
             android:textAllCaps="false"
@@ -117,7 +187,7 @@
             android:layout_below="@id/PassLay"
             android:layout_marginRight="50dp"
             android:layout_marginLeft="50dp"
-            android:layout_marginTop="260dp"
+            android:layout_marginTop="220dp"
             android:text="RETOUR"
             android:textStyle="bold"
             android:textAllCaps="false"

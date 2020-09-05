@@ -12,6 +12,9 @@ import android.widget.Toast;
 import java.util.List;
 
 public class NewLocalisationActivity extends AppCompatActivity {
+    private EditText addNuméroL;
+    private EditText addAdresse;
+    private EditText addTéléphone;
     private EditText addLongétude;
     private EditText addAttitude;
     private Button ADD_L;
@@ -21,6 +24,9 @@ public class NewLocalisationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_localisation);
+        addNuméroL = (EditText) findViewById(R.id.addNuméroL);
+        addAdresse = (EditText) findViewById(R.id.addAdresse);
+        addTéléphone = (EditText) findViewById(R.id.addTéléphone);
         addLongétude = (EditText) findViewById(R.id.addLongétude);
         addAttitude = (EditText) findViewById(R.id.addAttitude);
 
@@ -31,8 +37,11 @@ public class NewLocalisationActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Localisation localisation = new Localisation();
-                localisation.setLongétude(addLongétude.getText().toString());
+                localisation.setNuméro(addNuméroL.getText().toString());
+                localisation.setAdresse(addAdresse.getText().toString());
+                localisation.setTéléphone(addTéléphone.getText().toString());
                 localisation.setAttitude(addAttitude.getText().toString());
+                localisation.setLongétude(addLongétude.getText().toString());
 
                 new FirebaseDatabaseHelperL().addLocalisations(localisation, new FirebaseDatabaseHelperL.DataStatus() {
                     @Override
