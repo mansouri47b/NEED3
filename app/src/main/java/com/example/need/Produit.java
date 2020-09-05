@@ -32,24 +32,12 @@ public class Produit {
         this.Nom_produit = Nom_produit;
     }
 
-    public String Quantité() {return Quantité;
-
+    public String getQuantité() {return Quantité;
     }
 
     public void setQuantité(String Quantité) {
         this.Quantité = Quantité;
     }
-    public String Prix() {
-        return Prix;
-    }
-
-    public void Prix(String Prix) {
-        this.Prix = Prix;
-    }
-
-    public String getQuantité() {return Quantité;
-    }
-
     public String getPrix() {
         return Prix;
 

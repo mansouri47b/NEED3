@@ -200,7 +200,7 @@
                 android:onClick="GoToHomePage"
                 />
             <ImageView
-                android:id="@+id/logoutadmin"
+                android:id="@+id/logoutAdmin"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_gravity="right"

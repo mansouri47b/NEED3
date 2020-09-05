@@ -39,7 +39,7 @@
             android:padding="5dp">
 
             <EditText
-                android:id="@+id/addNum"
+                android:id="@+id/addNuméroP"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="14dp"
