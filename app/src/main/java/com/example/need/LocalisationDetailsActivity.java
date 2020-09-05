@@ -78,8 +78,7 @@ public class LocalisationDetailsActivity extends AppCompatActivity {
 
                     @Override
                     public void DataIsUpdatedL() {
-                        Toast.makeText(LocalisationDetailsActivity.this, "Localisation record has been" +
-                                "updated successfully", Toast.LENGTH_LONG).show();
+                        Toast.makeText(LocalisationDetailsActivity.this, "L'enregistrement du point de vente a été mis à jour avec succès", Toast.LENGTH_LONG).show();
 
                     }
 
@@ -111,8 +110,7 @@ public class LocalisationDetailsActivity extends AppCompatActivity {
 
                     @Override
                     public void DataIsDeletedL() {
-                        Toast.makeText(LocalisationDetailsActivity.this, "Localisation record has been" +
-                                "deleted successfully", Toast.LENGTH_LONG).show();
+                        Toast.makeText(LocalisationDetailsActivity.this, "L'enregistrement du point de vente a été supprimé avec succès", Toast.LENGTH_LONG).show();
                         finish(); return;
                     }
                 });

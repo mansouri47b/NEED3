@@ -174,7 +174,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         googleUrl.append("&radius="+ProximityRadius);
         googleUrl.append("&type="+nearByPlace);
         googleUrl.append("&sensor=true");
-        googleUrl.append("&key"+"AIzaSyD8a42iBPtBaHstUc9R2djsZkPbovgKRK4");
+        googleUrl.append("&key"+"AIzaSyBIukixEg9qdcJNXH61hA9AYUn4eqPbkQo");
 
        Log.d("MapsActivity","url = "+googleUrl.toString());
 
