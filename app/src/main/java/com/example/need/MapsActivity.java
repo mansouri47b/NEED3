@@ -107,6 +107,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 String address= addressfield.getText().toString();
                 List<Address> addressList=null;
                 MarkerOptions usermarkerOptions=new MarkerOptions() ;
+
                 if (!TextUtils.isEmpty(address)){
                     Geocoder geocoder=new Geocoder(this);
                     try {
@@ -268,11 +269,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
 
     }
-    public void Logout(){
+
+
+    /*public void Logout( ){
+
         FirebaseAuth.getInstance().signOut();
         Intent intent=new Intent(MapsActivity.this,LoginActivity.class);
         startActivity(intent);
         finish();
 
-        }
+        }*/
 }
