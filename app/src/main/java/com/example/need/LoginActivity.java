@@ -57,7 +57,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             if(Email.getText().toString().equals("admin@gmail.com") &&
                     Pass.getText().toString().equals("jesuisadmin")) {
                 Toast.makeText(getApplicationContext(),
-                        "Redirecting...", Toast.LENGTH_SHORT).show();
+                        "Redirection ...", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(LoginActivity.this, AdminActivity.class));
             }
 
@@ -70,13 +70,13 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                             if (task.isSuccessful()) {
 
                                 // Sign in success, update UI with the signed-in user's information
-                                Log.d(TAG, "signInWithEmail:success");
+                                Log.d(TAG, "Authentification réussié");
                                 FirebaseUser user = mAuth.getCurrentUser();
                                 updateUI(user);
                             } else {
                                 // If sign in fails, display a message to the user.
                                 Log.w(TAG, "signInWithEmail:failure", task.getException());
-                                Toast.makeText(LoginActivity.this, "Authentication failed.",
+                                Toast.makeText(LoginActivity.this, "Email ou mot de passe incorrect",
                                         Toast.LENGTH_SHORT).show();
                             }
 

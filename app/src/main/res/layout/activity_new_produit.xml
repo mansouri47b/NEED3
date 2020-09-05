@@ -48,7 +48,7 @@
                 android:layout_marginBottom="7dp"
                 android:layout_weight="1"
                 android:background="@android:color/white"
-                android:hint="Ajouté Numéro produit"
+                android:hint="Ajouter Numéro produit"
                 android:inputType="text" />
 
 
@@ -74,7 +74,7 @@
                 android:layout_marginBottom="7dp"
                 android:layout_weight="1"
                 android:background="@android:color/white"
-                android:hint="Ajouté Nom produit"
+                android:hint="Ajouter Nom produit"
                 android:inputType="text" />
 
         </LinearLayout>
@@ -97,7 +97,7 @@
                 android:layout_marginBottom="7dp"
                 android:layout_weight="1"
                 android:background="@android:color/white"
-                android:hint="Ajouté Quantité"
+                android:hint="Ajouter Quantité"
                 android:inputType="text" />
 
         </LinearLayout>
@@ -120,7 +120,7 @@
             android:layout_marginBottom="7dp"
             android:layout_weight="1"
             android:background="@android:color/white"
-            android:hint="Ajouté Prix"
+            android:hint="Ajouter Prix"
             android:inputType="text" />
         </LinearLayout>
 
@@ -132,7 +132,7 @@
             android:layout_marginRight="50dp"
             android:layout_marginLeft="50dp"
             android:layout_marginTop="190dp"
-            android:text="AJOUTÉ"
+            android:text="AJOUTER"
             android:textStyle="bold"
             android:textAllCaps="false"
             android:background="@drawable/custom_corner"
@@ -147,7 +147,7 @@
             android:layout_marginRight="50dp"
             android:layout_marginLeft="50dp"
             android:layout_marginTop="260dp"
-            android:text="BACK"
+            android:text="RETOUR"
             android:textStyle="bold"
             android:textAllCaps="false"
             android:background="@drawable/custom_corner"

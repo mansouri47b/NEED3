@@ -46,7 +46,7 @@
                 android:layout_marginBottom="7dp"
                 android:layout_weight="1"
                 android:background="@android:color/white"
-                android:hint="Ajouté Numéro"
+                android:hint="Ajouter Numéro"
                 android:inputType="text" />
 
 
@@ -70,7 +70,7 @@
                 android:layout_marginBottom="7dp"
                 android:layout_weight="1"
                 android:background="@android:color/white"
-                android:hint="Ajouté Adresse"
+                android:hint="Ajouter Adresse"
                 android:inputType="text" />
 
 
@@ -94,7 +94,7 @@
                 android:layout_marginBottom="7dp"
                 android:layout_weight="1"
                 android:background="@android:color/white"
-                android:hint="Ajouté Téléphone"
+                android:hint="Ajouter Téléphone"
                 android:inputType="text" />
 
 
@@ -120,7 +120,7 @@
                 android:layout_marginBottom="7dp"
                 android:layout_weight="1"
                 android:background="@android:color/white"
-                android:hint="Ajouté Longitude"
+                android:hint="Ajouter Longitude"
                 android:inputType="text" />
 
 
@@ -146,7 +146,7 @@
                 android:layout_marginBottom="7dp"
                 android:layout_weight="1"
                 android:background="@android:color/white"
-                android:hint="Ajouté Latitude"
+                android:hint="Ajouter Latitude"
                 android:inputType="text" />
 
         </LinearLayout>
@@ -160,7 +160,7 @@
             android:layout_marginRight="50dp"
             android:layout_marginLeft="50dp"
             android:layout_marginTop="60dp"
-            android:text="AJOUTÉ"
+            android:text="AJOUTER"
             android:textStyle="bold"
             android:textAllCaps="false"
             android:background="@drawable/custom_corner"

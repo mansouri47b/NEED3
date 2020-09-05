@@ -73,9 +73,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="11dp"
-                        android:text="Ajouter des points des ventes"
+                        android:text="Ajouter point de vente"
                         android:textColor="@android:color/white"
-                        android:textSize="8sp"
+                        android:textSize="10sp"
                         android:textStyle="italic|bold" />
 
 
@@ -112,8 +112,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Supprimer des points des ventes"
-                        android:textSize="7sp"
+                        android:text="Supprimer point de vente"
+                        android:textSize="10sp"
                         android:textStyle="bold|italic"
                         android:textColor="@android:color/white"
                         android:layout_marginTop="12dp"/>
@@ -152,15 +152,15 @@
             <ImageView
                 android:id="@+id/GoSupprimerL"
                 android:src="@drawable/modifloc"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
                 android:onClick="GoSupprimerL"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Modifier des points des ventes"
-                android:textSize="11sp"
+                android:text="Modifier point de vente"
+                android:textSize="10sp"
                 android:textStyle="bold|italic"
                 android:textColor="@android:color/white"
                 android:layout_marginTop="12dp"/>
