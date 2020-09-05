@@ -107,7 +107,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 String address= addressfield.getText().toString();
                 List<Address> addressList=null;
                 MarkerOptions usermarkerOptions=new MarkerOptions() ;
-
                 if (!TextUtils.isEmpty(address)){
                     Geocoder geocoder=new Geocoder(this);
                     try {

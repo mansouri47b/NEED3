@@ -38,7 +38,7 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyApBTJDMYp_YOgsox7ZJHOG81FGTWrrJ7U" />
+            android:value="AIzaSyD8a42iBPtBaHstUc9R2djsZkPbovgKRK4" />
         <meta-data
             android:name="firebase_analytics_collection_enabled"
             android:value="true" />
