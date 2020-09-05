@@ -45,7 +45,7 @@ public class NewProduitActivity extends AppCompatActivity {
 
                     @Override
                     public void DataIsInserted() {
-                        Toast.makeText(NewProduitActivity.this, "The Produit record has "+ "been inserted Successfully"
+                        Toast.makeText(NewProduitActivity.this, "L'enregistrement du produit a été inséré avec succès"
                         ,Toast.LENGTH_LONG).show();
 
                     }

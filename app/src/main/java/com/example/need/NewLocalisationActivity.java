@@ -50,7 +50,7 @@ public class NewLocalisationActivity extends AppCompatActivity {
 
                     @Override
                     public void DataIsInsertedL() {
-                        Toast.makeText(NewLocalisationActivity.this, "The Localisation record has "+ "been inserted Successfully"
+                        Toast.makeText(NewLocalisationActivity.this, "L'enregistrement du point de vente a été inséré avec succès"
                                 ,Toast.LENGTH_LONG).show();
 
                     }
