@@ -13,8 +13,8 @@ public class LocalisationListActivity extends AppCompatActivity {
     private RecyclerView mRecyclerViewL ;
     protected void onCreate(Bundle savedInstaceState) {
         super.onCreate(savedInstaceState);
-        setContentView(R.layout.activity_localisation_list);
         mRecyclerViewL = (RecyclerView) findViewById(R.id.recyclerview_localisations);
+        setContentView(R.layout.activity_localisation_list);
         new FirebaseDatabaseHelperL().ReadLocalisations(new FirebaseDatabaseHelperL.DataStatus() {
             @Override
             public void DataIsLoadedL(List<Localisation> localisations, List<String> keys) {

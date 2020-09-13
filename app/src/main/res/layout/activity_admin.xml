@@ -203,7 +203,7 @@
                 android:id="@+id/logoutadmin"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:layout_marginLeft="360dp"
+                android:layout_marginLeft="330dp"
                 android:background="@drawable/out"
                 android:layout_marginTop="9dp"
                 android:onClick="onClick"

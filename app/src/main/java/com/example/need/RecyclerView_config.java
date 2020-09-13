@@ -18,11 +18,9 @@ import java.util.List;
 public class RecyclerView_config{
    private Context mContext ;
    private ProduitsAdapter mProduitsAdapter  ;
-
    public void setConfig(RecyclerView recyclerView , Context context , List<Produit> produits , List<String> keys){
        mContext = context;
        mProduitsAdapter = new ProduitsAdapter(produits ,keys);
-       
        recyclerView.setAdapter(mProduitsAdapter);
        recyclerView.setLayoutManager(new LinearLayoutManager(context));
    }

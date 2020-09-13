@@ -107,7 +107,6 @@ public class LocalisationDetailsActivity extends AppCompatActivity {
                     public void DataIsUpdatedL() {
 
                     }
-
                     @Override
                     public void DataIsDeletedL() {
                         Toast.makeText(LocalisationDetailsActivity.this, "L'enregistrement du point de vente a été supprimé avec succès", Toast.LENGTH_LONG).show();
