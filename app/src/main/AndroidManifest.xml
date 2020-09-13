@@ -25,6 +25,7 @@
         <activity android:name=".deleteProduitActivity" />
         <activity android:name=".updateProduitActivity" />
         <activity android:name=".NewProduitActivity" />
+        <activity android:name=".ProduitListActivity" />
         <activity android:name=".AdminActivity" />
         <activity android:name=".GestionProduit" />
         <activity android:name=".GestionEntreprise" />

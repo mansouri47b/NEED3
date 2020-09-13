@@ -12,7 +12,7 @@ import android.widget.Toast;
 import java.util.List;
 
 public class NewProduitActivity extends AppCompatActivity {
-    private EditText addNuméro;
+    private EditText addNuméroP;
     private EditText addNom;
     private EditText addQuantité;
     private EditText addPrix;
@@ -23,7 +23,7 @@ public class NewProduitActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_produit);
-        addNuméro = (EditText) findViewById(R.id.addNum);
+        addNuméroP = (EditText) findViewById(R.id.addNuméroP);
         addNom = (EditText) findViewById(R.id.addNom);
         addQuantité = (EditText) findViewById(R.id.addQuantité);
         addPrix = (EditText) findViewById(R.id.addPrix);
@@ -34,7 +34,7 @@ public class NewProduitActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Produit produit = new Produit();
-                produit.setNuméro(addNuméro.getText().toString());
+                produit.setNuméro(addNuméroP.getText().toString());
                 produit.setNom_produit(addNom.getText().toString());
                 produit.setQuantité(addQuantité.getText().toString());
                 produit.setPrix(addPrix.getText().toString());

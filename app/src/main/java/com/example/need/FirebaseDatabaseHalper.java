@@ -1,9 +1,9 @@
 package com.example.need;
 
-import android.content.Context;
 import android.widget.ArrayAdapter;
 
 import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DataSnapshot;
@@ -11,15 +11,16 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-
 import java.util.ArrayList;
 import java.util.List;
 
 
-public class FirebaseDatabaseHalper  {
+public class FirebaseDatabaseHalper {
     private FirebaseDatabase mDatabase;
     private DatabaseReference mReference;
     private List<Produit> produits = new ArrayList<>();
+
+
     public interface DataStatus{
         void DataIsLoaded(List<Produit> produits ,List<String> keys );
         void DataIsInserted();
@@ -37,16 +38,13 @@ public class FirebaseDatabaseHalper  {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 produits.clear();
                 List<String> keys = new ArrayList<>();
-                for(DataSnapshot keyNode : dataSnapshot.getChildren()){
+                for(DataSnapshot keyNode : dataSnapshot.getChildren()) {
                     keys.add(keyNode.getKey());
                     Produit produit = keyNode.getValue(Produit.class);
                     produits.add(produit);
                 }
                 dataStatus.DataIsLoaded(produits,keys);
-
             }
-
-
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
 
