@@ -17,7 +17,7 @@ import java.util.List;
 
 public class RecyclerView_config{
    private Context mContext ;
-   private ProduitsAdapter mProduitsAdapter  ;
+   public ProduitsAdapter mProduitsAdapter  ;
 
    public void setConfig(RecyclerView recyclerView , Context context , List<Produit> produits , List<String> keys){
        mContext = context;

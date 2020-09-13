@@ -12,8 +12,8 @@ public class ProduitListActivity extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstaceState) {
         super.onCreate(savedInstaceState);
-        setContentView(R.layout.poduit_list);
-        mRecyclerView = (RecyclerView) findViewById(R.id.recyclerview_produits);
+        setContentView(R.layout.);
+        mRecyclerView = (RecyclerView) findViewById(R.id.);
         new FirebaseDatabaseHalper().ReadProduits(new FirebaseDatabaseHalper.DataStatus() {
             @Override
             public void DataIsLoaded(List<Produit> produits, List<String> keys) {

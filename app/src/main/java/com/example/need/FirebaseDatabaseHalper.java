@@ -1,5 +1,8 @@
 package com.example.need;
 
+import android.content.Context;
+import android.widget.ArrayAdapter;
+
 import androidx.annotation.NonNull;
 
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -13,11 +16,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class FirebaseDatabaseHalper {
+public class FirebaseDatabaseHalper  {
     private FirebaseDatabase mDatabase;
     private DatabaseReference mReference;
     private List<Produit> produits = new ArrayList<>();
-
     public interface DataStatus{
         void DataIsLoaded(List<Produit> produits ,List<String> keys );
         void DataIsInserted();
@@ -41,7 +43,10 @@ public class FirebaseDatabaseHalper {
                     produits.add(produit);
                 }
                 dataStatus.DataIsLoaded(produits,keys);
+
             }
+
+
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
 
