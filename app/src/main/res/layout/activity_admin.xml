@@ -206,7 +206,6 @@
                 android:layout_marginLeft="330dp"
                 android:background="@drawable/out"
                 android:layout_marginTop="9dp"
-                android:onClick="onClick"
                 />
 
 
