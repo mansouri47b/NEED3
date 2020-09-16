@@ -21,11 +21,11 @@
         android:theme="@style/AppTheme">
         <activity android:name=".LocalisationDetailsActivity"></activity>
         <activity android:name=".NewLocalisationActivity" />
-        <activity android:name=".LoginActivity" />
+        <activity android:name=".ProduitListActivity" />
         <activity android:name=".deleteProduitActivity" />
         <activity android:name=".updateProduitActivity" />
         <activity android:name=".NewProduitActivity" />
-        <activity android:name=".ProduitListActivity" />
+        <activity android:name=".LocalisationListActivity" />
         <activity android:name=".AdminActivity" />
         <activity android:name=".GestionProduit" />
         <activity android:name=".GestionEntreprise" />
@@ -48,7 +48,7 @@
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps" />
         <activity android:name=".Register" />
-        <activity android:name=".LocalisationListActivity">
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

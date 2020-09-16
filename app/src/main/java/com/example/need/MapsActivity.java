@@ -61,6 +61,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private static final int Request_User_Location_Code=99;
     double latitude,longitude;
     private int ProximityRadius = 10000;
+    Distance distance[];
 
 
 
@@ -216,6 +217,23 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .build();
         googleApiClient.connect();
 
+    }
+    public static void tri_selection(Distance[] tab)
+    {
+        for (int i = 0; i < tab.length - 1; i++)
+        {
+            int index = i;
+            for (int j = i + 1; j < tab.length; j++)
+            {
+                if (tab[j].getDistance() < tab[index].getDistance()){
+                    index = j;
+                }
+            }
+
+            Distance min = tab[index];
+            tab[index] = tab[i];
+            tab[i] = min;
+        }
     }
 
     @Override

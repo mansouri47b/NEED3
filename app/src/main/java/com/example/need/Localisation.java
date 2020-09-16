@@ -1,29 +1,29 @@
 package com.example.need;
 
 public class Localisation {
-    private String Numéro ;
+    private String Numero ;
     private String Adresse;
-    private String Téléphone ;
-    private String Longétude ;
+    private String Telephone ;
+    private String Longetude ;
     private String Attitude;
 
     public Localisation() {
     }
 
     public Localisation(String numéro, String adresse, String téléphone, String longétude, String attitude) {
-        Numéro = numéro;
+        Numero = numéro;
         Adresse = adresse;
-        Téléphone = téléphone;
-        Longétude = longétude;
+        Telephone = téléphone;
+        Longetude = longétude;
         Attitude = attitude;
     }
 
     public String getNuméro() {
-        return Numéro;
+        return Numero;
     }
 
     public void setNuméro(String numéro) {
-        Numéro = numéro;
+        Numero = numéro;
     }
 
     public String getAdresse() {
@@ -35,19 +35,19 @@ public class Localisation {
     }
 
     public String getTéléphone() {
-        return Téléphone;
+        return Telephone;
     }
 
     public void setTéléphone(String téléphone) {
-        Téléphone = téléphone;
+        Telephone = téléphone;
     }
 
     public String getLongétude() {
-        return Longétude;
+        return Longetude;
     }
 
     public void setLongétude(String longétude) {
-        Longétude = longétude;
+        Longetude = longétude;
     }
 
     public String getAttitude() {

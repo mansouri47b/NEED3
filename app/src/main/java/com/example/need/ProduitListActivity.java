@@ -12,22 +12,23 @@ public class ProduitListActivity extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstaceState) {
         super.onCreate(savedInstaceState);
-        setContentView(R.layout.);
-        mRecyclerView = (RecyclerView) findViewById(R.id.);
+        setContentView(R.layout.poduit_list);
+        mRecyclerView = (RecyclerView) findViewById(R.id.recyclerview_produits);
+        mRecyclerView.setHasFixedSize(true);
         new FirebaseDatabaseHalper().ReadProduits(new FirebaseDatabaseHalper.DataStatus() {
             @Override
             public void DataIsLoaded(List<Produit> produits, List<String> keys) {
-                new RecyclerView_config().setConfig(mRecyclerView, ProduitListActivity.this
-                        ,produits , keys);
-            }
+                    new RecyclerView_config().setConfig(mRecyclerView, ProduitListActivity.this
+                            ,produits , keys);
+                }
 
-            @Override
-            public void DataIsInserted() {
+                @Override
+                public void DataIsInserted() {
 
-            }
+                }
 
-            @Override
-            public void DataIsUpdated() {
+                @Override
+                public void DataIsUpdated() {
 
             }
 

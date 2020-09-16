@@ -1,27 +1,27 @@
 package com.example.need;
 
 public class Produit {
-    private String Numéro;
+    private String Numero;
     private String Nom_produit;
-    private String Quantité;
+    private String Quantite;
     private String Prix;
 
     public Produit() {
     }
 
     public Produit(String Numéro , String Nom_produit, String Quantité ,String Prix) {
-        this.Numéro = Numéro;
+        this.Numero = Numéro;
         this.Nom_produit = Nom_produit;
-        this.Quantité = Quantité;
+        this.Quantite = Quantité;
         this.Prix = Prix;
     }
 
     public String getNuméro() {
-        return Numéro;
+        return Numero;
     }
 
     public void setNuméro(String Numéro) {
-        this.Numéro = Numéro;
+        this.Numero = Numéro;
     }
 
     public String getNom_produit() {
@@ -32,11 +32,11 @@ public class Produit {
         this.Nom_produit = Nom_produit;
     }
 
-    public String getQuantité() {return Quantité;
+    public String getQuantité() {return Quantite;
     }
 
     public void setQuantité(String Quantité) {
-        this.Quantité = Quantité;
+        this.Quantite = Quantité;
     }
     public String getPrix() {
         return Prix;

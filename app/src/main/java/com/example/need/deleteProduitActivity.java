@@ -21,9 +21,9 @@ public class deleteProduitActivity extends AppCompatActivity {
     private Button BACKD;
 
     private String key;
-    private String Numéro;
+    private String Numero;
     private String Nom_produit;
-    private String Quantité;
+    private String Quantite;
     private String Prix;
 
     @Override
@@ -32,18 +32,18 @@ public class deleteProduitActivity extends AppCompatActivity {
         setContentView(R.layout.activity_delete_produit);
 
         key = getIntent().getStringExtra("key");
-        Numéro = getIntent().getStringExtra("Numéro");
+        Numero = getIntent().getStringExtra("Numero");
         Nom_produit = getIntent().getStringExtra("Nom_produit");
-        Quantité = getIntent().getStringExtra("Quantité");
+        Quantite = getIntent().getStringExtra("Quantite");
         Prix = getIntent().getStringExtra("Prix");
 
 
         deleteNuméro = (EditText) findViewById(R.id.deleteNum);
-        deleteNuméro.setText(Numéro);
+        deleteNuméro.setText(Numero);
         deleteNom = (EditText) findViewById(R.id.deleteNom);
         deleteNom.setText(Nom_produit);
         deleteQuantité = (EditText) findViewById(R.id.deleteQuantité);
-        deleteQuantité.setText(Quantité);
+        deleteQuantité.setText(Quantite);
         deletePrix = (EditText) findViewById(R.id.deletePrix);
         deletePrix.setText(Prix);
 
