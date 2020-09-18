@@ -73,7 +73,7 @@ public class updateProduitActivity extends AppCompatActivity {
 
                     @Override
                     public void DataIsUpdated() {
-                        Toast.makeText(updateProduitActivity.this, "Produit record has "+ "been updated Successfully"
+                        Toast.makeText(updateProduitActivity.this, "Le produit a été mis à jour avec succès"
                                 ,Toast.LENGTH_LONG).show();
                     }
 

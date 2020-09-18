@@ -21,11 +21,11 @@
         android:theme="@style/AppTheme">
         <activity android:name=".LocalisationDetailsActivity"></activity>
         <activity android:name=".NewLocalisationActivity" />
-        <activity android:name=".ProduitListActivity" />
+        <activity android:name=".LocalisationListActivity" />
         <activity android:name=".deleteProduitActivity" />
         <activity android:name=".updateProduitActivity" />
         <activity android:name=".NewProduitActivity" />
-        <activity android:name=".LocalisationListActivity" />
+        <activity android:name=".ProduitListActivity" />
         <activity android:name=".AdminActivity" />
         <activity android:name=".GestionProduit" />
         <activity android:name=".GestionEntreprise" />

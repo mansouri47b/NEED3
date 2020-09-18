@@ -78,7 +78,7 @@ public class deleteProduitActivity extends AppCompatActivity {
 
                     @Override
                     public void DataIsDeleted() {
-                        Toast.makeText(deleteProduitActivity.this, "Produit record has "+ "been deleted Successfully"
+                        Toast.makeText(deleteProduitActivity.this, "Le produit a été supprimé avec succès"
                                 ,Toast.LENGTH_LONG).show();
 
                     }

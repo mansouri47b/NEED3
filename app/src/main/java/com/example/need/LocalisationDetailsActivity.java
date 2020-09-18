@@ -23,10 +23,10 @@ public class LocalisationDetailsActivity extends AppCompatActivity {
     private Button mRetour;
 
     private String key;
-    private String Numéro;
+    private String Numero;
     private String Adresse;
-    private String Téléphone;
-    private String Longétude;
+    private String Telephone;
+    private String Longetude;
     private String Attitude;
 
     @Override
@@ -35,20 +35,20 @@ public class LocalisationDetailsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_localisation_details);
 
         key = getIntent().getStringExtra("key");
-        Numéro = getIntent().getStringExtra("Numéro");
+        Numero = getIntent().getStringExtra("Numero");
         Adresse = getIntent().getStringExtra("Adresse");
-        Téléphone = getIntent().getStringExtra("Téléphone");
-        Longétude = getIntent().getStringExtra("Longétude");
+        Telephone = getIntent().getStringExtra("Telephone");
+        Longetude = getIntent().getStringExtra("Longetude");
         Attitude = getIntent().getStringExtra("Attitude");
 
         mNuméro = (EditText) findViewById(R.id.Numéro1);
-        mNuméro.setText(Numéro);
+        mNuméro.setText(Numero);
         mAdresse = (EditText) findViewById(R.id.Adresse1);
         mAdresse.setText(Adresse);
         mTéléphone = (EditText) findViewById(R.id.Téléphone1);
-        mTéléphone.setText(Téléphone);
+        mTéléphone.setText(Telephone);
         mLongétude = (EditText) findViewById(R.id.Longétude1);
-        mLongétude.setText(Longétude);
+        mLongétude.setText(Longetude);
         mAttitude = (EditText) findViewById(R.id.Attitude1);
         mAttitude.setText(Attitude);
 
