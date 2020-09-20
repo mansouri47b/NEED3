@@ -12,9 +12,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:src="@drawable/ss"
-        android:layout_alignParentBottom ="true"
-        android:paddingLeft ="-8dp"
-        android:layout_marginBottom ="-20dp"/>
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="-8dp"
+        android:layout_marginBottom="-20dp"/>
 
 
     <RelativeLayout
@@ -28,42 +28,17 @@
         android:layout_marginRight="32dp"
         android:layout_marginBottom="-5dp">
 
-
         <LinearLayout
-            android:id="@+id/emailLay"
+
             android:layout_width="match_parent"
             android:layout_height="55dp"
-            android:layout_marginTop="23dp"
-            android:background="@drawable/shape"
-            android:orientation="horizontal"
-            android:padding="5dp">
-
-            <EditText
-                android:id="@+id/updateNum"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="14dp"
-                android:layout_marginTop="7dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="7dp"
-                android:layout_weight="1"
-                android:background="@android:color/white"
-                android:hint="Modifier Numéro produit"
-                android:inputType="text" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/PassLay"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_below="@+id/emailLay"
             android:layout_marginTop="20dp"
             android:background="@drawable/shape"
             android:orientation="horizontal"
             android:padding="5dp">
 
             <EditText
-                android:id="@+id/updateNom"
+                android:id="@+id/Nom_produit1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="14dp"
@@ -72,21 +47,22 @@
                 android:layout_marginBottom="7dp"
                 android:layout_weight="1"
                 android:background="@android:color/white"
-                android:hint="Modifier Nom produit"
+                android:hint=" Nom produit"
                 android:inputType="text" />
+
 
         </LinearLayout>
         <LinearLayout
+
             android:layout_width="match_parent"
             android:layout_height="55dp"
-            android:layout_below="@+id/PassLay"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="93dp"
             android:background="@drawable/shape"
             android:orientation="horizontal"
             android:padding="5dp">
 
             <EditText
-                android:id="@+id/updateQuantité"
+                android:id="@+id/NuméroP1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="14dp"
@@ -95,21 +71,20 @@
                 android:layout_marginBottom="7dp"
                 android:layout_weight="1"
                 android:background="@android:color/white"
-                android:hint="Modifier Quantité"
+                android:hint=" Numéro"
                 android:inputType="text" />
-
         </LinearLayout>
         <LinearLayout
+
             android:layout_width="match_parent"
             android:layout_height="55dp"
-            android:layout_below="@+id/PassLay"
-            android:layout_marginTop="90dp"
+            android:layout_marginTop="163dp"
             android:background="@drawable/shape"
             android:orientation="horizontal"
             android:padding="5dp">
 
             <EditText
-                android:id="@+id/updatePrix"
+                android:id="@+id/Prix1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="14dp"
@@ -118,18 +93,44 @@
                 android:layout_marginBottom="7dp"
                 android:layout_weight="1"
                 android:background="@android:color/white"
-                android:hint="Modifier  Prix"
+                android:hint=" Prix"
                 android:inputType="text" />
         </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="235dp"
+            android:background="@drawable/shape"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <EditText
+                android:id="@+id/Quantité1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="7dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:hint=" Quantité"
+                android:inputType="text" />
+
+
+        </LinearLayout>
+
+
 
         <Button
-            android:id="@+id/UPDATE"
+            android:id="@+id/MODIFIER"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/PassLay"
             android:layout_marginRight="50dp"
             android:layout_marginLeft="50dp"
-            android:layout_marginTop="190dp"
+            android:layout_marginTop="360dp"
             android:text="MODIFIER"
             android:textStyle="bold"
             android:textAllCaps="false"
@@ -138,20 +139,35 @@
             android:backgroundTint="#934cf4"
             />
         <Button
-            android:id="@+id/BACK"
+            android:id="@+id/SUPPRIMER"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/PassLay"
             android:layout_marginRight="50dp"
             android:layout_marginLeft="50dp"
-            android:layout_marginTop="260dp"
-            android:text="RETOUR"
+            android:layout_marginTop="440dp"
+            android:text="SUPPRIMER"
             android:textStyle="bold"
             android:textAllCaps="false"
             android:background="@drawable/custom_corner"
             android:textColor="@android:color/white"
             android:backgroundTint="#934cf4"
             />
+        <Button
+            android:id="@+id/RETOUR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/PassLay"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="520dp"
+            android:text="RETOUR"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:background="@drawable/custom_corner"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#934cf4"
+            tools:ignore="NotSibling" />
 
     </RelativeLayout>
 

@@ -44,23 +44,15 @@ public class RecyclerView_config{
            itemView.setOnClickListener(new View.OnClickListener() {
                @Override
                public void onClick(View view) {
-                   Intent intent = new Intent(mContext, updateProduitActivity.class);
-                   Intent intent1 = new Intent(mContext, deleteProduitActivity.class);
+                   Intent intent = new Intent(mContext, ProduitDetailsActivity.class);
                    intent.putExtra("key",key);
                    intent.putExtra("Numero",mNuméro.getText().toString());
                    intent.putExtra("Nom_produit",mNom_produit.getText().toString());
                    intent.putExtra("Quantite",mQuantité.getText().toString());
                    intent.putExtra("Prix",mPrix.getText().toString());
 
-                   intent1.putExtra("key",key);
-                   intent1.putExtra("Numero",mNuméro.getText().toString());
-                   intent1.putExtra("Nom_produit",mNom_produit.getText().toString());
-                   intent1.putExtra("Quantite",mQuantité.getText().toString());
-                   intent1.putExtra("Prix",mPrix.getText().toString());
-
-
                    mContext.startActivity(intent);
-                   mContext.startActivity(intent1);
+
                }
            });
 

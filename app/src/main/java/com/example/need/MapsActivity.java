@@ -217,22 +217,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         googleApiClient.connect();
 
     }
-    public static void tri_selection(Distance[] distance)
-    {
-        for (int i = 0; i < distance.length - 1; i++)
-        {
-            int index = i
-            {
-                if (tab[j].getDistance() < tab[index].getDistance()){
-                    index = j;
-                }
-            }
 
-            Distance min = tab[index];
-            tab[index] = tab[i];
-            tab[i] = min;
-        }
-    }
 
     @Override
     public void onLocationChanged(Location location) {
@@ -283,6 +268,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     index = j;
                 }
             }
+
             Distance min = tab[index];
             tab[index] = tab[i];
             tab[i] = min;
@@ -298,6 +284,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
 
     }
+
 
 
     /*public void Logout( ){

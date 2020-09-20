@@ -7,8 +7,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd9c86d1-4fd9-45df-93b6-c37e81688611" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/need/ProduitDetailsActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_produit_details.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/need/FirebaseDatabaseHalper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/need/FirebaseDatabaseHalper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/need/MapsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/need/MapsActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/need/RecyclerView_config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/need/RecyclerView_config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/need/deleteProduitActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/need/updateProduitActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_delete_produit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_update_produit.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +38,13 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="valueResourceFile" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -46,6 +63,11 @@
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+  <component name="RecentsManager">
+    <key name="android.template.1855725042">
+      <recent name="com.example.need" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -125,8 +147,25 @@
       <option name="project" value="LOCAL" />
       <updated>1600630369103</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="test">
+      <created>1600630967913</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1600630967913</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
@@ -137,10 +176,22 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="200" y="101" key="#PSD/0.0.1366.738@0.0.1366.738" timestamp="1600627307409" />
-    <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1600630363561">
+    <state x="488" y="78" key="#com.intellij.ide.util.MemberChooser" timestamp="1600634830260">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1600630363561" />
+    <state x="488" y="78" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1600634830260" />
+    <state x="413" y="116" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600632001670">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="413" y="116" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.738@0.0.1366.738" timestamp="1600632001670" />
+    <state x="263" y="124" key="AndroidCreateResourceFileDialog" timestamp="1600632105756">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="263" y="124" key="AndroidCreateResourceFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1600632105756" />
+    <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1600630965226">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1600630965226" />
     <state x="92" y="92" width="1182" height="554" key="DiffContextDialog" timestamp="1600630928272">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -169,13 +220,17 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="379" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1600609326858" />
-    <state x="413" y="159" key="git4idea.merge.GitPullDialog" timestamp="1600630888010">
+    <state x="413" y="159" key="git4idea.merge.GitPullDialog" timestamp="1600630971685">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="413" y="159" key="git4idea.merge.GitPullDialog/0.0.1366.738@0.0.1366.738" timestamp="1600630888010" />
+    <state x="413" y="159" key="git4idea.merge.GitPullDialog/0.0.1366.738@0.0.1366.738" timestamp="1600630971685" />
     <state x="304" y="112" key="psd.add.library.dependency.panel.dimension" timestamp="1600627281209">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="304" y="112" key="psd.add.library.dependency.panel.dimension/0.0.1366.738@0.0.1366.738" timestamp="1600627281209" />
+    <state x="339" y="165" key="run.anything.popup" timestamp="1600634082025">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1600634082025" />
   </component>
 </project>

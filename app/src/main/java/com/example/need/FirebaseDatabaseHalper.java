@@ -20,7 +20,6 @@ public class FirebaseDatabaseHalper {
     private DatabaseReference mReference;
     private List<Produit> produits = new ArrayList<>();
 
-
     public interface DataStatus{
         void DataIsLoaded(List<Produit> produits ,List<String> keys );
         void DataIsInserted();
@@ -70,7 +69,7 @@ public class FirebaseDatabaseHalper {
                     }
                 });
     }
-    public void deleteProduit(String key, Produit produitD, final DataStatus dataStatus){
+    public void deleteProduit(String key, final DataStatus dataStatus){
         mReference.child(key).setValue(null)
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
