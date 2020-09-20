@@ -6,12 +6,16 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd9c86d1-4fd9-45df-93b6-c37e81688611" name="Default Changelist" comment="" />
+    <list default="true" id="fd9c86d1-4fd9-45df-93b6-c37e81688611" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/need/MapsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/need/MapsActivity.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="8ec2c47c" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -114,13 +118,33 @@
       <option name="presentableId" value="Default" />
       <updated>1600559979624</updated>
     </task>
+    <task id="LOCAL-00001" summary="test">
+      <created>1600630369103</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1600630369103</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
   <component name="WindowStateProjectService">
     <state x="200" y="101" key="#PSD" timestamp="1600627307409">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="200" y="101" key="#PSD/0.0.1366.738@0.0.1366.738" timestamp="1600627307409" />
+    <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1600630363561">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1600630363561" />
+    <state x="92" y="92" width="1182" height="554" key="DiffContextDialog" timestamp="1600630928272">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="92" y="92" width="1182" height="554" key="DiffContextDialog/0.0.1366.738@0.0.1366.738" timestamp="1600630928272" />
     <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1600561151174">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -129,6 +153,14 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="473" y="236" key="Github.CreatePullRequestDialog/0.0.1366.738@0.0.1366.738" timestamp="1600627116099" />
+    <state x="395" y="85" key="MultipleFileMergeDialog" timestamp="1600630389057">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="395" y="85" key="MultipleFileMergeDialog/0.0.1366.738@0.0.1366.738" timestamp="1600630389057" />
+    <state x="506" y="80" key="RollbackChangesDialog" timestamp="1600630788702">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="506" y="80" key="RollbackChangesDialog/0.0.1366.738@0.0.1366.738" timestamp="1600630788702" />
     <state x="184" y="12" key="SettingsEditor" timestamp="1600627036113">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -137,10 +169,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="379" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1600609326858" />
-    <state x="413" y="159" key="git4idea.merge.GitPullDialog" timestamp="1600630113170">
+    <state x="413" y="159" key="git4idea.merge.GitPullDialog" timestamp="1600630888010">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="413" y="159" key="git4idea.merge.GitPullDialog/0.0.1366.738@0.0.1366.738" timestamp="1600630113170" />
+    <state x="413" y="159" key="git4idea.merge.GitPullDialog/0.0.1366.738@0.0.1366.738" timestamp="1600630888010" />
     <state x="304" y="112" key="psd.add.library.dependency.panel.dimension" timestamp="1600627281209">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
