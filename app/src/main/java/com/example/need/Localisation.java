@@ -1,60 +1,58 @@
 package com.example.need;
 
 public class Localisation {
-    private String Numéro ;
-    private String Adresse;
-    private String Téléphone ;
-    private String Longétude ;
-    private String Attitude;
+    private String numero ;
+    private String adresse;
+    private String telephone ;
+    private String longetude ;
+    private String attitude;
 
     public Localisation() {
     }
 
-    public Localisation(String numéro, String adresse, String téléphone, String longétude, String attitude) {
-        Numéro = numéro;
-        Adresse = adresse;
-        Téléphone = téléphone;
-        Longétude = longétude;
-        Attitude = attitude;
+    public Localisation(String numero, String adresse, String telephone, String longetude, String attitude) {
+        this.numero = numero;
+        this.adresse = adresse;
+        this.telephone = telephone;
+        this.longetude = longetude;
+        this.attitude = attitude;
     }
 
     public String getNuméro() {
-        return Numéro;
+        return numero;
     }
 
-    public void setNuméro(String numéro) {
-        Numéro = numéro;
+    public void setNuméro(String numero) {
+        this.numero= numero;
     }
 
     public String getAdresse() {
-        return Adresse;
+        return adresse;
     }
 
     public void setAdresse(String adresse) {
-        Adresse = adresse;
+        this.adresse = adresse;
     }
 
     public String getTéléphone() {
-        return Téléphone;
+        return telephone;
     }
 
-    public void setTéléphone(String téléphone) {
-        Téléphone = téléphone;
+    public void setTéléphone(String telephone) {
+        this.telephone = telephone;
     }
 
     public String getLongétude() {
-        return Longétude;
+        return longetude;
     }
 
-    public void setLongétude(String longétude) {
-        Longétude = longétude;
+    public void setLongétude(String longetude) {
+        this.longetude = longetude;
     }
 
     public String getAttitude() {
-        return Attitude;
+        return attitude;
     }
 
-    public void setAttitude(String attitude) {
-        Attitude = attitude;
-    }
+    public void setAttitude(String attitude) {  this.attitude = attitude;}
 }

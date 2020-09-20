@@ -26,7 +26,7 @@ public class NewProduitActivity extends AppCompatActivity {
         addNuméroP = (EditText) findViewById(R.id.addNuméroP);
         addNom = (EditText) findViewById(R.id.addNom);
         addQuantité = (EditText) findViewById(R.id.addQuantité);
-        addPrix = (EditText) findViewById(R.id.addPrix);
+        addPrix = (EditText) findViewById (R.id.addPrix);
         ADD = (Button) findViewById(R.id.ADD);
         BACKA = (Button) findViewById(R.id.BACKA);
 

@@ -48,10 +48,10 @@ public class RecyclerView_ConfigL{
                     Intent intent = new Intent(mContextL, LocalisationDetailsActivity.class);
 
                     intent.putExtra("key",key);
-                    intent.putExtra("Numéro",Numéro.getText().toString());
+                    intent.putExtra("Numero",Numéro.getText().toString());
                     intent.putExtra("Adresse",Adresse.getText().toString());
-                    intent.putExtra("Téléphone",Téléphone.getText().toString());
-                    intent.putExtra("Longétude",Longétude.getText().toString());
+                    intent.putExtra("Telephone",Téléphone.getText().toString());
+                    intent.putExtra("Longetude",Longétude.getText().toString());
                     intent.putExtra("Attitude",Attitude.getText().toString());
 
                     mContextL.startActivity(intent);

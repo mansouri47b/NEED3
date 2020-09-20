@@ -23,6 +23,7 @@ public class RecyclerView_config{
        mProduitsAdapter = new ProduitsAdapter(produits ,keys);
        recyclerView.setAdapter(mProduitsAdapter);
        recyclerView.setLayoutManager(new LinearLayoutManager(context));
+
    }
 
    class ProduitTtemView extends RecyclerView.ViewHolder{
@@ -46,15 +47,15 @@ public class RecyclerView_config{
                    Intent intent = new Intent(mContext, updateProduitActivity.class);
                    Intent intent1 = new Intent(mContext, deleteProduitActivity.class);
                    intent.putExtra("key",key);
-                   intent.putExtra("Numéro",mNuméro.getText().toString());
-                   intent.putExtra("Nom produit",mNom_produit.getText().toString());
-                   intent.putExtra("Quantité",mQuantité.getText().toString());
+                   intent.putExtra("Numero",mNuméro.getText().toString());
+                   intent.putExtra("Nom_produit",mNom_produit.getText().toString());
+                   intent.putExtra("Quantite",mQuantité.getText().toString());
                    intent.putExtra("Prix",mPrix.getText().toString());
 
                    intent1.putExtra("key",key);
-                   intent1.putExtra("Numéro",mNuméro.getText().toString());
-                   intent1.putExtra("Nom produit",mNom_produit.getText().toString());
-                   intent1.putExtra("Quantité",mQuantité.getText().toString());
+                   intent1.putExtra("Numero",mNuméro.getText().toString());
+                   intent1.putExtra("Nom_produit",mNom_produit.getText().toString());
+                   intent1.putExtra("Quantite",mQuantité.getText().toString());
                    intent1.putExtra("Prix",mPrix.getText().toString());
 
 
@@ -62,6 +63,7 @@ public class RecyclerView_config{
                    mContext.startActivity(intent1);
                }
            });
+
        }
        public void bind(Produit produit , String key ){
            mNuméro.setText(produit.getNuméro());

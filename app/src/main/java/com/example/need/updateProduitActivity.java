@@ -21,9 +21,9 @@ public class updateProduitActivity extends AppCompatActivity {
     private Button BACK;
 
     private String key;
-    private String Numéro;
+    private String Numero;
     private String Nom_produit;
-    private String Quantité;
+    private String Quantite;
     private String Prix;
 
     @Override
@@ -32,18 +32,18 @@ public class updateProduitActivity extends AppCompatActivity {
         setContentView(R.layout.activity_update_produit);
 
         key = getIntent().getStringExtra("key");
-        Numéro = getIntent().getStringExtra("Numéro");
+        Numero = getIntent().getStringExtra("Numero");
         Nom_produit = getIntent().getStringExtra("Nom_produit");
-        Quantité = getIntent().getStringExtra("Quantité");
+        Quantite = getIntent().getStringExtra("Quantite");
         Prix = getIntent().getStringExtra("Prix");
 
 
         updateNuméro = (EditText) findViewById(R.id.updateNum);
-        updateNuméro.setText(Numéro);
+        updateNuméro.setText(Numero);
         updateNom = (EditText) findViewById(R.id.updateNom);
         updateNom.setText(Nom_produit);
         updateQuantité = (EditText) findViewById(R.id.updateQuantité);
-        updateQuantité.setText(Quantité);
+        updateQuantité.setText(Quantite);
         updatePrix = (EditText) findViewById(R.id.updatePrix);
         updatePrix.setText(Prix);
         
@@ -73,7 +73,7 @@ public class updateProduitActivity extends AppCompatActivity {
 
                     @Override
                     public void DataIsUpdated() {
-                        Toast.makeText(updateProduitActivity.this, "Produit record has "+ "been updated Successfully"
+                        Toast.makeText(updateProduitActivity.this, "Le produit a été mis à jour avec succès"
                                 ,Toast.LENGTH_LONG).show();
                     }
 

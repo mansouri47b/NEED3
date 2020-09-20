@@ -6,13 +6,13 @@ import java.util.*;
 import java.lang.*;
 
     public class Distance {
-
         private  LatLng latLng;
        private double distance;
 
         public Distance(LatLng latLng, double distance) {
             this.latLng = latLng;
             this.distance = distance;
+
         }
 
         public LatLng getLatLng() {

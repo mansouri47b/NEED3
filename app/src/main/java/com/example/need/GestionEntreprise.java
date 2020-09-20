@@ -21,13 +21,13 @@ public class GestionEntreprise extends AppCompatActivity {
     }
     public void GoModifierL(View view) {
         switch (view.getId()){
-            case  R.id. GoModifierL : startActivity(new Intent(GestionEntreprise.this,LocalisationDetailsActivity.class));
+            case  R.id. GoModifierL : startActivity(new Intent(GestionEntreprise.this,LocalisationListActivity.class));
                 break;}
 
     }
     public void GoSupprimerL(View view) {
         switch (view.getId()){
-            case  R.id. GoSupprimerL : startActivity(new Intent(GestionEntreprise.this,LocalisationDetailsActivity.class));
+            case  R.id. GoSupprimerL : startActivity(new Intent(GestionEntreprise.this,LocalisationListActivity.class));
                 break;}
 
     }
