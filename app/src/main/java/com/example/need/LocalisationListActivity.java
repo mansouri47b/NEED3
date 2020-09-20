@@ -15,6 +15,7 @@ public class LocalisationListActivity extends AppCompatActivity {
         super.onCreate(savedInstaceState);
         mRecyclerViewL = (RecyclerView) findViewById(R.id.recyclerview_localisations);
         setContentView(R.layout.activity_localisation_list);
+        mRecyclerViewL.setHasFixedSize(true);
         new FirebaseDatabaseHelperL().ReadLocalisations(new FirebaseDatabaseHelperL.DataStatus() {
             @Override
             public void DataIsLoadedL(List<Localisation> localisations, List<String> keys) {

@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "504228640666",
+    "firebase_url": "https://need3-e509f.firebaseio.com",
+    "project_id": "need3-e509f",
+    "storage_bucket": "need3-e509f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:504228640666:android:eb768f4784750c7df76c23",
+        "android_client_info": {
+          "package_name": "com.example.need"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "504228640666-60v1oa23td5jhgf6q5kkq516nkbmp64k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.need",
+            "certificate_hash": "54e3c29f812eae9f4199c481b64ab6ffa3af5137"
+          }
+        },
+        {
+          "client_id": "504228640666-07kqs03sersie25ddsn2ajueu4m27149.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.need",
+            "certificate_hash": "22bc7830a38ada5089899bc627dbc064aded6e29"
+          }
+        },
+        {
+          "client_id": "504228640666-jn0c2q3g8ssgr822401tqa7oile7vnpf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCB2z9kaX-T3zuZsYoSnKtOSJtKj5ogQ_I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "504228640666-jn0c2q3g8ssgr822401tqa7oile7vnpf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -44,7 +44,7 @@ dependencies {
     implementation 'com.google.android.gms:play-services-auth:18.1.0'
 }
 dependencies {
-   api 'com.android.support:multidex:1.0.3' //enter the latest version
+    api 'com.android.support:multidex:1.0.3' //enter the latest version
 }
 android {
     defaultConfig {
